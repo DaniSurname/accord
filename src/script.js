@@ -23,6 +23,10 @@ function updatePerfumeInfo(index) {
   let longevity = perfumes[index].longevity;
   perfumeLongevity.innerHTML = `<em>An ${type} has an expected longevity of approx. ${longevity}.</em>`;
 
+  // let perfumeImpression = document.querySelector("#perfume-impression");
+  // let impression = perfumes[index].impression;
+  // perfumeImpression.innerHTML = `<em>${impression}</em>`;
+
   let perfumeSize = document.querySelector("#perfume-size");
   let size = perfumes[index].size;
   perfumeSize.innerHTML = `${size} size in collection.`;
