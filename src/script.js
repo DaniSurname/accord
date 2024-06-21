@@ -62,4 +62,5 @@ function getPerfumeName() {
 let searchBar = document.querySelector("#search-bar");
 searchBar.addEventListener("submit", getPerfumeName);
 
-getPerfumeID("CLASSIQUE");
+// getPerfumeID("NO5");
+updatePerfumeInfo(Math.floor(Math.random() * 52) + 1);
