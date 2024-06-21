@@ -37,6 +37,10 @@ a {
   font-size: 15px;
 }
 
+a.home-button {
+  color: rgba(147, 197, 114, 0.3);
+}
+
 .container {
   margin: 50px;
   padding: 30px;
