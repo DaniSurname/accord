@@ -13,18 +13,27 @@
         <h2>a perfume database</h2>
       </a>
       <div class="container">
+        <div class="button-container">
+          <button onclick="getScent()" id="Aldehyde">Aldehyde 🧪</button>
+          <button onclick="getScent()" id="Amber">Amber 🥃</button>
+          <button onclick="getScent()" id="Aquatic">Aquatic 🌊</button>
+          <button onclick="getScent()" id="Chypre">Chypre 🌲</button>
+          <button onclick="getScent()" id="Citrus">Citrus 🍋</button>
+          <button onclick="getScent()" id="Floral">Floral 🌸</button>
+          <button onclick="getScent()" id="Fresh">Fresh 🫧</button>
+          <button onclick="getScent()" id="Fruity">Fruity 🍓</button>
+          <button onclick="getScent()" id="Gourmand">Gourmand 🧁</button>
+          <button onclick="getScent()" id="Green">Green 🌿</button>
+          <button onclick="getScent()" id="Smoky">Smoky 🔥</button>
+          <button onclick="getScent()" id="Spicy">Spicy 🌶️</button>
+          <button onclick="getScent()" id="Woody">Woody 🪵</button>
+        </div>
         <div class="result-container">
-          <p class="mid-text">WORK IN PROGRESS</p>
-          <br />
-          <p class="caption-text">
-            Search by scent profile functionality coming soon.
-          </p>
-          <br />
-          <div id="googleButton">
-            <a href="index.html">Back Home</a>
-          </div>
+          <div id="results"></div>
         </div>
       </div>
     </div>
+    <script src="src/data.js"></script>
+    <script src="src/scent-script.js"></script>
   </body>
 </html>
