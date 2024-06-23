@@ -1,27 +1,32 @@
 function displayScentResults(list, query) {
-  //   console.log(`${list.length} results found for the ${query} scent profile.`);
   let resultHtml = "";
 
   list.forEach(function (item) {
-    // console.log(item.name);
-    console.log(resultHtml);
+    let name = item.name.toUpperCase();
+    let brand = item.brand;
+    let scent = item.scent;
+    let longevity = item.longevity;
 
     resultHtml =
       resultHtml +
-      `<div class="result">
-        <div>
-            <p class="title-text">${item.name}</p>
-            <p class="caption-text">by ${item.brand}</p>
+      `<div class="list-result-container">
+        <div class="result">
+        <div class="result-item">
+            <p class="mid-text">${name}</p>
+            <p class="caption-text">by ${brand}</p>
         </div>
         <div>
-            <p class="mid-text">${item.scent}</p>
-            <p class="caption-text">${item.longevity}</p>
+            <p class="mid-text">${scent}</p>
+            <p class="caption-text">${longevity}</p>
+        </div>
         </div>
     </div>`;
   });
 
   let resultElement = document.querySelector("#results");
   resultElement.innerHTML = resultHtml;
+  let counterElement = document.querySelector("#counter");
+  counterElement.innerHTML = `${list.length} result(s) found for ${query}:`;
 }
 
 function filterPerfumes(perfumes, query) {
