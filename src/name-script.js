@@ -1,5 +1,3 @@
-console.log(perfumes[3].Name);
-
 function updatePerfumeInfo(index) {
   // event.preventDefault();
 
@@ -43,6 +41,7 @@ function getPerfumeID(perfumeFinder) {
 }
 
 function getFinder(input) {
+  window.localStorage.setItem("savedQuery", "");
   perfumeFinder = input
     .toUpperCase()
     .replaceAll(".", "")
@@ -62,5 +61,9 @@ function getPerfumeName() {
 let searchBar = document.querySelector("#search-bar");
 searchBar.addEventListener("submit", getPerfumeName);
 
-// getPerfumeID("NO5");
-updatePerfumeInfo(Math.floor(Math.random() * 52) + 1);
+let savedQuery = window.localStorage.getItem("savedQuery");
+if (savedQuery !== "") {
+  getFinder(savedQuery);
+} else {
+  updatePerfumeInfo(Math.floor(Math.random() * 52) + 1);
+}

@@ -1,3 +1,13 @@
+function openName() {
+  window.location.href = "name.html";
+}
+
+function saveQuery() {
+  let query = event.srcElement.id;
+  window.localStorage.setItem("savedQuery", query);
+  openName();
+}
+
 function displayScentResults(list, query) {
   let resultHtml = "";
 
@@ -18,6 +28,9 @@ function displayScentResults(list, query) {
         <div>
             <p class="mid-text">${scent}</p>
             <p class="caption-text">${longevity}</p>
+        </div>
+        <div>
+        <button onclick="saveQuery()" id="${name}">🔍</button>
         </div>
         </div>
     </div>`;
