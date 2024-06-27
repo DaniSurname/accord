@@ -146,6 +146,13 @@ button {
   border-radius: 5px;
 }
 
+button:hover {
+  background-color: rgba(147, 197, 114, 0.3);
+  cursor: pointer;
+  transition: 200ms;
+  transform: scale(1.05);
+}
+
 #search-bar {
   display: flex;
   justify-content: center;
