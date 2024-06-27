@@ -8,39 +8,35 @@
     <title>Accord | Search by Scent</title>
   </head>
   <body>
-    <div class="header-container">
-      <a href="index.html">
-        <h1>ACCORD</h1>
-        <h2>a perfume database</h2>
-      </a>
-      <div class="container">
-        <div class="dropdown" tabindex="0">
-          <button class="dropdown-button">
-            <span>Search by Scent profile...</span>
-            <span class="arrow"></span>
-          </button>
-          <!--  -->
-          <ul class="dropdown-content">
-            <li onclick="getScent()" id="Aldehyde">Aldehyde 🧪</li>
-            <li onclick="getScent()" id="Amber">Amber 🥃</li>
-            <li onclick="getScent()" id="Aquatic">Aquatic 🌊</li>
-            <li onclick="getScent()" id="Chypre">Chypre 🌲</li>
-            <li onclick="getScent()" id="Citrus">Citrus 🍋</li>
-            <li onclick="getScent()" id="Floral">Floral 🌸</li>
-            <li onclick="getScent()" id="Fresh">Fresh 🫧</li>
-            <li onclick="getScent()" id="Fruity">Fruity 🍓</li>
-            <li onclick="getScent()" id="Gourmand">Gourmand 🧁</li>
-            <li onclick="getScent()" id="Green">Green 🌿</li>
-            <li onclick="getScent()" id="Smoky">Smoky 🔥</li>
-            <li onclick="getScent()" id="Spicy">Spicy 🌶️</li>
-            <li onclick="getScent()" id="Woody">Woody 🪵</li>
-          </ul>
-        </div>
-        <h3 id="counter">Select a scent profile to filter by.</h3>
-
-        <div id="results"></div>
+    <div class="header-container"></div>
+    <div class="container">
+      <div class="dropdown" tabindex="0">
+        <button class="dropdown-button">
+          <span>Search by Scent profile...</span>
+          <span class="arrow"></span>
+        </button>
+        <!--  -->
+        <ul class="dropdown-content">
+          <li onclick="getScent()" id="Aldehyde">Aldehyde 🧪</li>
+          <li onclick="getScent()" id="Amber">Amber 🥃</li>
+          <li onclick="getScent()" id="Aquatic">Aquatic 🌊</li>
+          <li onclick="getScent()" id="Chypre">Chypre 🌲</li>
+          <li onclick="getScent()" id="Citrus">Citrus 🍋</li>
+          <li onclick="getScent()" id="Floral">Floral 🌸</li>
+          <li onclick="getScent()" id="Fresh">Fresh 🫧</li>
+          <li onclick="getScent()" id="Fruity">Fruity 🍓</li>
+          <li onclick="getScent()" id="Gourmand">Gourmand 🧁</li>
+          <li onclick="getScent()" id="Green">Green 🌿</li>
+          <li onclick="getScent()" id="Smoky">Smoky 🔥</li>
+          <li onclick="getScent()" id="Spicy">Spicy 🌶️</li>
+          <li onclick="getScent()" id="Woody">Woody 🪵</li>
+        </ul>
       </div>
+      <h3 id="counter">Select a scent profile to filter by.</h3>
+
+      <div id="results"></div>
     </div>
+    <script src="src/scripts/main-script.js"></script>
     <script src="src/data/perfume-data.js"></script>
     <script src="src/scripts/scent-script.js"></script>
   </body>

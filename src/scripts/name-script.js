@@ -29,7 +29,7 @@ function updatePerfumeInfo(index) {
   let size = perfumes[index].size;
   perfumeSize.innerHTML = `${size} size in collection.`;
 
-  let GoogleButton = document.querySelector("#googleButton");
+  let GoogleButton = document.querySelector("#google-button");
   GoogleButton.innerHTML = `<a href="https://google.com/search?q=
   ${perfumes[index].name} by ${perfumes[index].brand}">
   Search on Google</a>`;
