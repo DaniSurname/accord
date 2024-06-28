@@ -40,7 +40,7 @@ function updatePerfumeInfo(index) {
 }
 
 function getPerfumeID(perfumeFinder) {
-  let index = perfumes.findIndex((item) => item.finder === perfumeFinder);
+  let index = perfumes.findIndex((item) => item.finder.includes(perfumeFinder));
   updatePerfumeInfo(index);
 }
 
