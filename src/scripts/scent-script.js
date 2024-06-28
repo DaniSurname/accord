@@ -26,8 +26,8 @@ function displayScentResults(list, query) {
     // Constructs HTML to display for each filtered array item
     resultHtml =
       resultHtml +
-      `<div class="list-result-container">
-        <div class="result">
+      `<div class="list-results-container">
+        <div class="result-item-container">
         <div class="result-item">
             <p class="mid-text">${name}</p>
             <p class="caption-text">by ${brand}</p>
@@ -44,7 +44,7 @@ function displayScentResults(list, query) {
   });
 
   // Updates page with collect HTML for filtered results
-  let resultElement = document.querySelector("#results");
+  let resultElement = document.querySelector("#list-results");
   resultElement.innerHTML = resultHtml;
   // Updates counter element with filtered list length
   let counterElement = document.querySelector("#counter");
