@@ -14,7 +14,7 @@ function updatePerfumeInfo(index) {
           <div class="title-text">${name}</div>
           <div class="mid-text">by ${brand}</div>
           <br />
-          <div class="caption-text">${type.toUpperCase()}</div>
+          <div class="mid-text">${type.toUpperCase()}</div>
           <br />
           <div class="caption-text"><em>Expected longevity: <br / >${longevity}</em></div>
         </div>
@@ -38,43 +38,6 @@ function updatePerfumeInfo(index) {
         </div>
 `;
 }
-
-// function updatePerfumeInfo(index) {
-//   // event.preventDefault();
-
-//   let perfumeName = document.querySelector("#perfume-name");
-//   let name = perfumes[index].name;
-//   perfumeName.innerHTML = name.toUpperCase();
-
-//   let perfumeBrand = document.querySelector("#perfume-brand");
-//   let brand = perfumes[index].brand;
-//   perfumeBrand.innerHTML = `by ${brand}`;
-
-//   let perfumeType = document.querySelector("#perfume-type");
-//   let type = perfumes[index].type;
-//   perfumeType.innerHTML = type.toUpperCase();
-
-//   let perfumeScent = document.querySelector("#perfume-scent");
-//   let scent = perfumes[index].scent;
-//   perfumeScent.innerHTML = scent;
-
-//   let perfumeLongevity = document.querySelector("#perfume-longevity");
-//   let longevity = perfumes[index].longevity;
-//   perfumeLongevity.innerHTML = `<em>An ${type} has an expected longevity of approx. ${longevity}.</em>`;
-
-//   // let perfumeImpression = document.querySelector("#perfume-impression");
-//   // let impression = perfumes[index].impression;
-//   // perfumeImpression.innerHTML = `<em>${impression}</em>`;
-
-//   let perfumeSize = document.querySelector("#perfume-size");
-//   let size = perfumes[index].size;
-//   perfumeSize.innerHTML = `${size} size in collection.`;
-
-//   let GoogleButton = document.querySelector("#google-button");
-//   GoogleButton.innerHTML = `<a href="https://google.com/search?q=
-//   ${perfumes[index].name} by ${perfumes[index].brand}">
-//   Search on Google</a>`;
-// }
 
 function getPerfumeID(perfumeFinder) {
   let index = perfumes.findIndex((item) => item.finder === perfumeFinder);
