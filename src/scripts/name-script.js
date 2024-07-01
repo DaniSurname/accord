@@ -6,22 +6,18 @@ function updateIndexInfo(index) {
   let indexElement = document.querySelector(".result-index-container");
   indexElement.innerHTML = `
       <div class="result-index">
-        <em>Previous:</em><br />
-        <a class="not-current caption-text" onclick="updatePerfumeInfo(${
-          index - 1
-        })">
+        <span class="index-title">Previous:</span><br />
+        <a class="not-current" onclick="updatePerfumeInfo(${index - 1})">
         ${previous}
         </a>
       </div>
       <div class="result-index current">
-      <em>Entry no. ${index}:</em><br />
-        <span class="caption-text">${current}</span>
+        <span class="index-title">Entry no. ${index}:</span><br />
+        ${current}
       </div>
       <div class="result-index">
-        <em>Next:</em><br />
-        <a class="not-current caption-text" onclick="updatePerfumeInfo(${
-          index + 1
-        })">
+        <span class="index-title">Next:</span><br />
+        <a class="not-current" onclick="updatePerfumeInfo(${index + 1})">
         ${next}
         </a>
       </div>
@@ -56,7 +52,7 @@ function updatePerfumeInfo(index) {
           </div>
           <hr />
           <div class="name-result-sub-container">
-          <div>${size} size in collection.</div>
+          <div class="caption-text">${size} size in collection.</div>
           <a href="https://google.com">
             <button id="google-button">
             <a href="https://google.com/search?q=${perfumes[index].name} by ${

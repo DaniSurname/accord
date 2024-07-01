@@ -48,6 +48,8 @@
 
 .dropdown-content {
   list-style: none;
+  list-style-position: inside;
+  padding-left: 3em;
   position: absolute;
   margin: 0 auto;
   width: 80%;
@@ -55,6 +57,10 @@
   visibility: hidden;
   opacity: 0;
   transition: opacity 300ms ease-in-out;
+
+  @media (max-width: 600px) {
+    padding-left: 2em;
+  }
 }
 
 .dropdown-content.menu-open {
@@ -98,6 +104,7 @@
   justify-content: space-between;
   align-items: center;
   gap: 20px 20px;
+  font-size: 0.9em;
 }
 
 .result-item {

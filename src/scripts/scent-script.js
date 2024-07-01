@@ -8,7 +8,7 @@ function saveQuery() {
   let query = event.srcElement.id;
   // Records ID in local storage
   window.localStorage.setItem("savedQuery", query);
-  // Triggers switch page functin
+  // Triggers switch page function
   openName();
 }
 
