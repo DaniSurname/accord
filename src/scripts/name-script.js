@@ -1,3 +1,33 @@
+function updateIndexInfo(index) {
+  let current = perfumes[index].name.toUpperCase();
+  let previous = perfumes[index - 1].name.toUpperCase();
+  let next = perfumes[index + 1].name.toUpperCase();
+
+  let indexElement = document.querySelector(".result-index-container");
+  indexElement.innerHTML = `
+      <div class="result-index">
+        <em>Previous:</em><br />
+        <a class="not-current caption-text" onclick="updatePerfumeInfo(${
+          index - 1
+        })">
+        ${previous}
+        </a>
+      </div>
+      <div class="result-index current">
+      <em>Entry no. ${index}:</em><br />
+        <span class="caption-text">${current}</span>
+      </div>
+      <div class="result-index">
+        <em>Next:</em><br />
+        <a class="not-current caption-text" onclick="updatePerfumeInfo(${
+          index + 1
+        })">
+        ${next}
+        </a>
+      </div>
+  `;
+}
+
 function updatePerfumeInfo(index) {
   let name = perfumes[index].name.toUpperCase();
   let brand = perfumes[index].brand;
@@ -37,6 +67,8 @@ function updatePerfumeInfo(index) {
         </div>
         </div>
 `;
+
+  updateIndexInfo(index);
 }
 
 function getPerfumeID(perfumeFinder) {

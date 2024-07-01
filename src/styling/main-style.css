@@ -80,6 +80,11 @@ button:hover {
   align-items: center;
   width: 100%;
   margin-top: 50px;
+  gap: 1em;
+
+  @media (max-width: 600px) {
+    font-size: 0.8em;
+  }
 }
 
 .container {
