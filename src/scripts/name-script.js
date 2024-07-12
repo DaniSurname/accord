@@ -54,7 +54,7 @@ function updatePerfumeInfo(index) {
           <div class="name-result-sub-container">
           <div class="caption-text">${size} size in collection.</div>
           <a href="https://google.com">
-            <button id="google-button">
+            <button class="event-button">
             <a href="https://google.com/search?q=${perfumes[index].name} by ${
     perfumes[index].brand
   }">
@@ -67,9 +67,20 @@ function updatePerfumeInfo(index) {
   updateIndexInfo(index);
 }
 
-function getPerfumeID(perfumeFinder) {
+function getPerfumeID(perfumeFinder, input) {
   let index = perfumes.findIndex((item) => item.finder.includes(perfumeFinder));
-  updatePerfumeInfo(index);
+  if (index >= 0) {
+    updatePerfumeInfo(index);
+  } else {
+    let resultElement = document.querySelector(".name-result-container");
+    resultElement.innerHTML = `
+    <div class="name-result-sub-container">
+    <div class="mid-text">No results found for:</div>
+    <div class="title-text">${input.toUpperCase()}</div>
+    <button class="event-button" onclick="location.reload()">Reload Page</button>
+    </div>
+    `;
+  }
 }
 
 function getFinder(input) {
@@ -79,7 +90,7 @@ function getFinder(input) {
     .replaceAll(".", "")
     .replaceAll("'", "")
     .replaceAll(" ", "");
-  getPerfumeID(perfumeFinder);
+  getPerfumeID(perfumeFinder, input);
 }
 
 function getPerfumeName() {
