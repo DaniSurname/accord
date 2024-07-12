@@ -150,7 +150,7 @@ button:hover {
 }
 
 .mid-text {
-  font-size: 1.4em;
+  font-size: 1.2em;
 
   @media (max-width: 600px) {
     font-size: 1.2em;
@@ -158,7 +158,7 @@ button:hover {
 }
 
 .caption-text {
-  font-size: 1.2em;
+  font-size: 1em;
 
   @media (max-width: 600px) {
     font-size: 1em;

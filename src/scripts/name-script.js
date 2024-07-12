@@ -14,6 +14,17 @@ function updateEntryInfo(index) {
   let previous = perfumes[previousIndex].name.toUpperCase();
   let current = perfumes[index].name.toUpperCase();
   let next = perfumes[nextIndex].name.toUpperCase();
+  let cap = 20;
+
+  if (previous.length > cap) {
+    previous = previous.slice(0, cap).trim().concat("...");
+  }
+  if (current.length > cap) {
+    current = current.slice(0, cap).trim().concat("...");
+  }
+  if (next.length > cap) {
+    next = next.slice(0, cap).trim().concat("...");
+  }
 
   let indexElement = document.querySelector(".result-index-container");
   indexElement.innerHTML = `
@@ -48,32 +59,32 @@ function updatePerfumeInfo(index) {
   // Updates page with query result
   let resultElement = document.querySelector(".name-result-container");
   resultElement.innerHTML = `
-          <div class="name-result-sub-container">
-          <div class="title-text">${name}</div>
-          <div class="mid-text">by ${brand}</div>
-          <br />
-          <div class="mid-text">${type.toUpperCase()}</div>
-          <br />
-          <div class="caption-text"><em>Expected longevity: <br / >${longevity}</em></div>
-        </div>
-        <hr />
-        <div class="name-result-sub-container">
-          <div class="mid-text">${scent}</div>
-          <br />
-          <div><em>${impression}</em></div>
-          </div>
-          <hr />
-          <div class="name-result-sub-container">
-          <div class="caption-text">${size} size in collection.</div>
-          <a href="https://google.com">
-            <button class="event-button">
-            <a href="https://google.com/search?q=${perfumes[index].name} by ${
-    perfumes[index].brand
-  }">
-            Search on Google</a></button>
-          </a>
-        </div>
-        </div>
+    <div class="name-result-sub-container">
+      <div class="title-text">${name}</div>
+      <div class="mid-text">by ${brand}</div>
+    </div>
+    <hr />
+    <div class="name-result-sub-container">
+      <div class="mid-text">${type.toUpperCase()}</div>
+      <div class="caption-text">${size} size in collection.</div>
+    </div>
+    <div class="name-result-sub-container"> 
+      <div class="caption-text"><em>Expected longevity: <br / >${longevity}</em></div>
+      </div>
+    </div>
+    <hr />
+    <div class="name-result-sub-container">
+     <div class="mid-text">${scent}</div>
+     <br />
+     <div><em>${impression}</em></div>
+    </div>
+    <div class="name-result-sub-container">
+      <button class="event-button">
+      <a href="https://google.com/search?q=${name} by ${brand}">
+      Search on Google
+      </a>
+      </button>
+    </div>
 `;
 
   updateEntryInfo(index);
@@ -89,6 +100,8 @@ function getPerfumeID(perfumeFinder, input) {
     <div class="name-result-sub-container">
     <div class="mid-text">No results found for:</div>
     <div class="title-text">${input.toUpperCase()}</div>
+    </div>
+    <div class="name-result-sub-container">
     <button class="event-button" onclick="location.reload()">Reload Page</button>
     </div>
     `;
