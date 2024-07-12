@@ -1,13 +1,25 @@
-function updateIndexInfo(index) {
+function updateEntryInfo(index) {
+  if (index < perfumes.length - 1) {
+    nextIndex = index + 1;
+  } else {
+    nextIndex = 0;
+  }
+
+  if (index > 0) {
+    previousIndex = index - 1;
+  } else {
+    previousIndex = perfumes.length - 1;
+  }
+
+  let previous = perfumes[previousIndex].name.toUpperCase();
   let current = perfumes[index].name.toUpperCase();
-  let previous = perfumes[index - 1].name.toUpperCase();
-  let next = perfumes[index + 1].name.toUpperCase();
+  let next = perfumes[nextIndex].name.toUpperCase();
 
   let indexElement = document.querySelector(".result-index-container");
   indexElement.innerHTML = `
       <div class="result-index">
         <span class="index-title">Previous:</span><br />
-        <a class="not-current" onclick="updatePerfumeInfo(${index - 1})">
+        <a class="not-current" onclick="updatePerfumeInfo(${previousIndex})">
         ${previous}
         </a>
       </div>
@@ -17,7 +29,7 @@ function updateIndexInfo(index) {
       </div>
       <div class="result-index">
         <span class="index-title">Next:</span><br />
-        <a class="not-current" onclick="updatePerfumeInfo(${index + 1})">
+        <a class="not-current" onclick="updatePerfumeInfo(${nextIndex})">
         ${next}
         </a>
       </div>
@@ -64,7 +76,7 @@ function updatePerfumeInfo(index) {
         </div>
 `;
 
-  updateIndexInfo(index);
+  updateEntryInfo(index);
 }
 
 function getPerfumeID(perfumeFinder, input) {
@@ -108,5 +120,5 @@ let savedQuery = window.localStorage.getItem("savedQuery");
 if (savedQuery !== "") {
   getFinder(savedQuery);
 } else {
-  updatePerfumeInfo(Math.floor(Math.random() * 52) + 1);
+  updatePerfumeInfo(Math.floor(Math.random() * 52));
 }
