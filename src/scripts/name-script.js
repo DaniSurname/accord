@@ -48,7 +48,7 @@ function updateEntryInfo(index) {
 }
 
 function updatePerfumeInfo(index) {
-  let name = perfumes[index].name.toUpperCase();
+  let name = perfumes[index].name;
   let brand = perfumes[index].brand;
   let type = perfumes[index].type;
   let scent = perfumes[index].scent;
@@ -60,7 +60,7 @@ function updatePerfumeInfo(index) {
   let resultElement = document.querySelector(".name-result-container");
   resultElement.innerHTML = `
     <div class="name-result-sub-container">
-      <div class="title-text">${name}</div>
+      <div class="title-text">${name.toUpperCase()}</div>
       <div class="mid-text">by ${brand}</div>
     </div>
     <hr />
