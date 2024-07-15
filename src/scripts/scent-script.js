@@ -51,11 +51,24 @@ function displayScentResults(list, query) {
   counterElement.innerHTML = `${list.length} result(s) found for ${query}:`;
 }
 
+function displayScentInfo(scents, query) {
+  let index = scents.findIndex((item) => item.scent.includes(query));
+  let about = scents[index].about;
+  let composition = scents[index].composition;
+
+  let infoElement = document.querySelector("#scent-info");
+  infoElement.innerHTML = `
+  <div class="further-info-title">${about.toUpperCase()}</div>
+  <div class="further-info-about">${composition}</div>
+  `;
+}
+
 function filterPerfumes(perfumes, query) {
   // Filters 'perfumes' array by scent query
   let list = perfumes.filter((element) => element.scent.includes(query));
   // Sends results to display function
   displayScentResults(list, query);
+  displayScentInfo(scents, query);
 }
 
 function toggleDropdown() {

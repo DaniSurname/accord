@@ -14,7 +14,14 @@ function updateEntryInfo(index) {
   let previous = perfumes[previousIndex].name.toUpperCase();
   let current = perfumes[index].name.toUpperCase();
   let next = perfumes[nextIndex].name.toUpperCase();
-  let cap = 20;
+
+  if (window.innerWidth > 600) {
+    cap = 20;
+  } else {
+    cap = 35;
+  }
+
+  console.log(cap);
 
   if (previous.length > cap) {
     previous = previous.slice(0, cap).trim().concat("...");

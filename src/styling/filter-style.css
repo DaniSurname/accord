@@ -88,6 +88,58 @@
   background-color: #3f5732;
 }
 
+/* Further info styling */
+
+/* .further-info {
+  margin: 0.5em 5em 0 5em;
+  text-align: center;
+
+/* color: white;
+} */
+
+.further-info-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  margin-bottom: 0;
+  gap: 1.2em;
+  text-align: center;
+  color: rgba(147, 197, 114, 0.5);
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+    margin: 0;
+    gap: 1em;
+  }
+}
+
+.further-info-title {
+  flex: 2;
+  font-size: 1.1em;
+
+  @media (max-width: 600px) {
+    margin-top: 30px;
+    font-size: 1.2em;
+  }
+}
+
+.further-info-about {
+  flex: 3;
+  font-size: 0.8em;
+  border-left: 1px solid rgba(147, 197, 114, 0.2);
+  padding-left: 2em;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+
+  @media (max-width: 600px) {
+    width: 80%;
+    border: 0;
+    border-top: 1px solid rgba(147, 197, 114, 0.2);
+    padding: 1em 0 0.5em 0;
+  }
+}
+
 /* List results styling */
 
 .list-results-container {
