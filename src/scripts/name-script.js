@@ -21,8 +21,6 @@ function updateEntryInfo(index) {
     cap = 35;
   }
 
-  console.log(cap);
-
   if (previous.length > cap) {
     previous = previous.slice(0, cap).trim().concat("...");
   }
@@ -54,17 +52,33 @@ function updateEntryInfo(index) {
   `;
 }
 
+function updateScentInfo(index) {
+  let firstScent = perfumes[index].firstScent;
+  let secondScent = perfumes[index].secondScent;
+  let impression = perfumes[index].impression;
+
+  // Updates page with query result
+  let resultElement = document.querySelector(".scent-info");
+  resultElement.innerHTML = `
+    <div class="name-result-sub-container">
+     <div class="mid-text">${firstScent.toUpperCase()} AND ${secondScent.toUpperCase()}</div>
+    </div>
+    <hr />
+    <div class="name-result-sub-container">
+     <div><em>${impression}</em></div>
+    </div>
+`;
+}
+
 function updatePerfumeInfo(index) {
   let name = perfumes[index].name;
   let brand = perfumes[index].brand;
   let type = perfumes[index].type;
-  let scent = perfumes[index].scent;
   let longevity = perfumes[index].longevity;
   let size = perfumes[index].size;
-  let impression = perfumes[index].impression;
 
   // Updates page with query result
-  let resultElement = document.querySelector(".name-result-container");
+  let resultElement = document.querySelector(".perfume-info");
   resultElement.innerHTML = `
     <div class="name-result-sub-container">
       <div class="title-text">${name.toUpperCase()}</div>
@@ -79,12 +93,6 @@ function updatePerfumeInfo(index) {
       <div class="caption-text"><em>Expected longevity: <br / >${longevity}</em></div>
       </div>
     </div>
-    <hr />
-    <div class="name-result-sub-container">
-     <div class="mid-text">${scent}</div>
-     <br />
-     <div><em>${impression}</em></div>
-    </div>
     <div class="name-result-sub-container">
       <button class="event-button">
       <a href="https://google.com/search?q=${name} by ${brand}">
@@ -94,6 +102,7 @@ function updatePerfumeInfo(index) {
     </div>
 `;
 
+  updateScentInfo(index);
   updateEntryInfo(index);
 }
 
