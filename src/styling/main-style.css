@@ -149,6 +149,14 @@ button:hover {
   }
 }
 
+.max-text {
+  font-size: 1.5em;
+
+  @media (max-width: 600px) {
+    font-size: 1.5em;
+  }
+}
+
 .mid-text {
   font-size: 1.2em;
 

@@ -8,7 +8,7 @@ let perfumes = [
     firstScent: "Spicy",
     secondScent: "Fresh",
     longevity: "4 to 5 hours",
-    impression: "Impression not recorded.",
+    impression: null,
   },
   {
     name: "500 Years",
@@ -19,7 +19,7 @@ let perfumes = [
     firstScent: "Fresh",
     secondScent: "Woody",
     longevity: "4 to 5 hours",
-    impression: "Impression not recorded.",
+    impression: null,
   },
   {
     name: "Activist",
@@ -30,7 +30,7 @@ let perfumes = [
     firstScent: "Woody",
     secondScent: "Spicy",
     longevity: "2 to 3 hours",
-    impression: "Impression not recorded.",
+    impression: null,
   },
   {
     name: "Agarbathi",
@@ -41,7 +41,7 @@ let perfumes = [
     firstScent: null,
     secondScent: null,
     longevity: "4 to 5 hours",
-    impression: "Impression not recorded.",
+    impression: null,
   },
   {
     name: "AlUla",
@@ -52,7 +52,7 @@ let perfumes = [
     firstScent: "Amber",
     secondScent: "Smoky",
     longevity: "4 to 5 hours",
-    impression: "Impression not recorded.",
+    impression: null,
   },
   {
     name: "As Sawira",
@@ -63,7 +63,7 @@ let perfumes = [
     firstScent: null,
     secondScent: null,
     longevity: "4 to 5 hours",
-    impression: "Impression not recorded.",
+    impression: null,
   },
   {
     name: "Babylon",
@@ -74,7 +74,7 @@ let perfumes = [
     firstScent: null,
     secondScent: null,
     longevity: "4 to 5 hours",
-    impression: "Impression not recorded.",
+    impression: null,
   },
   {
     name: "Black Opium",
@@ -85,7 +85,7 @@ let perfumes = [
     firstScent: "Gourmand",
     secondScent: "Spicy",
     longevity: "4 to 5 hours",
-    impression: "Impression not recorded.",
+    impression: null,
   },
   {
     name: "Bleu de Chanel",
@@ -108,7 +108,7 @@ let perfumes = [
     firstScent: "Woody",
     secondScent: "Fresh",
     longevity: "4 to 5 hours",
-    impression: "Impression not recorded.",
+    impression: null,
   },
   {
     name: "AlUla-",
@@ -119,7 +119,7 @@ let perfumes = [
     firstScent: "Fresh",
     secondScent: "Woody",
     longevity: "4 to 5 hours",
-    impression: "Impression not recorded.",
+    impression: null,
   },
   {
     name: "Book+",
@@ -130,7 +130,7 @@ let perfumes = [
     firstScent: "Smoky",
     secondScent: "Green",
     longevity: "4 to 5 hours",
-    impression: "Impression not recorded.",
+    impression: null,
   },
   {
     name: "Brown No. 85",
@@ -141,7 +141,7 @@ let perfumes = [
     firstScent: "Spicy",
     secondScent: "Aquatic",
     longevity: "2 to 3 hours",
-    impression: "Impression not recorded.",
+    impression: null,
   },
   {
     name: "Cairo",
@@ -152,7 +152,7 @@ let perfumes = [
     firstScent: null,
     secondScent: null,
     longevity: "4 to 5 hours",
-    impression: "Impression not recorded.",
+    impression: null,
   },
   {
     name: "Classique",
@@ -163,7 +163,7 @@ let perfumes = [
     firstScent: "Floral",
     secondScent: "Gourmand",
     longevity: "2 to 3 hours",
-    impression: "Impression not recorded.",
+    impression: null,
   },
   {
     name: "Clean Suede",
@@ -186,7 +186,7 @@ let perfumes = [
     firstScent: null,
     secondScent: null,
     longevity: "4 to 5 hours",
-    impression: "Impression not recorded.",
+    impression: null,
   },
   {
     name: "Dandy",
@@ -197,7 +197,7 @@ let perfumes = [
     firstScent: null,
     secondScent: null,
     longevity: "4 to 5 hours",
-    impression: "Impression not recorded.",
+    impression: null,
   },
   {
     name: "Divin' Enfant",
@@ -208,7 +208,7 @@ let perfumes = [
     firstScent: "Floral",
     secondScent: "Fruity",
     longevity: "4 to 5 hours",
-    impression: "Impression not recorded.",
+    impression: null,
   },
   {
     name: "Eau de Protection",
@@ -219,7 +219,7 @@ let perfumes = [
     firstScent: "Floral",
     secondScent: "Spicy",
     longevity: "4 to 5 hours",
-    impression: "Impression not recorded.",
+    impression: null,
   },
   {
     name: "Elisabethan Rose",
@@ -230,7 +230,7 @@ let perfumes = [
     firstScent: "Floral",
     secondScent: "Woody",
     longevity: "4 to 5 hours",
-    impression: "Impression not recorded.",
+    impression: null,
   },
   {
     name: "Empressa",
@@ -241,7 +241,7 @@ let perfumes = [
     firstScent: "Floral",
     secondScent: "Spicy",
     longevity: "4 to 5 hours",
-    impression: "Impression not recorded.",
+    impression: null,
   },
   {
     name: "Experimentum Crucis",
@@ -264,7 +264,7 @@ let perfumes = [
     firstScent: "Spicy",
     secondScent: "Woody",
     longevity: "4 to 5 hours",
-    impression: "Impression not recorded.",
+    impression: null,
   },
   {
     name: "Gabrielle Essence",
@@ -287,7 +287,7 @@ let perfumes = [
     firstScent: "Floral",
     secondScent: "Aquatic",
     longevity: "4 to 5 hours",
-    impression: "Impression not recorded.",
+    impression: null,
   },
   {
     name: "Gold",
@@ -298,7 +298,7 @@ let perfumes = [
     firstScent: "Woody",
     secondScent: "Gourmand",
     longevity: "4 to 5 hours",
-    impression: "Impression not recorded.",
+    impression: null,
   },
   {
     name: "Empressa-",
@@ -309,7 +309,7 @@ let perfumes = [
     firstScent: "Gourmand",
     secondScent: "Woody",
     longevity: "4 to 5 hours",
-    impression: "Impression not recorded.",
+    impression: null,
   },
   {
     name: "Gold+",
@@ -320,7 +320,7 @@ let perfumes = [
     firstScent: "Gourmand",
     secondScent: "Spicy",
     longevity: "4 to 5 hours",
-    impression: "Impression not recorded.",
+    impression: null,
   },
   {
     name: "Halfeti",
@@ -331,7 +331,7 @@ let perfumes = [
     firstScent: "Woody",
     secondScent: "Spicy",
     longevity: "4 to 5 hours",
-    impression: "Impression not recorded.",
+    impression: null,
   },
   {
     name: "Halfeti Cedar",
@@ -342,7 +342,7 @@ let perfumes = [
     firstScent: null,
     secondScent: null,
     longevity: "4 to 5 hours",
-    impression: "Impression not recorded.",
+    impression: null,
   },
   {
     name: "Halfeti Leather",
@@ -353,7 +353,7 @@ let perfumes = [
     firstScent: null,
     secondScent: null,
     longevity: "4 to 5 hours",
-    impression: "Impression not recorded.",
+    impression: null,
   },
   {
     name: "Hermann A Mes Cotes Me Paraissait Une Ombre",
@@ -364,7 +364,7 @@ let perfumes = [
     firstScent: "Spicy",
     secondScent: "Chypre",
     longevity: "4 to 5 hours",
-    impression: "Impression not recorded.",
+    impression: null,
   },
   {
     name: "Iris Prima",
@@ -375,7 +375,7 @@ let perfumes = [
     firstScent: null,
     secondScent: null,
     longevity: "4 to 5 hours",
-    impression: "Impression not recorded.",
+    impression: null,
   },
   {
     name: "J'adore",
@@ -386,7 +386,7 @@ let perfumes = [
     firstScent: "Floral",
     secondScent: "Fruity",
     longevity: "4 to 5 hours",
-    impression: "Impression not recorded.",
+    impression: null,
   },
   {
     name: "Lawn",
@@ -397,7 +397,7 @@ let perfumes = [
     firstScent: "Green",
     secondScent: "Fresh",
     longevity: "4 to 5 hours",
-    impression: "Impression not recorded.",
+    impression: null,
   },
   {
     name: "Le Male",
@@ -444,7 +444,7 @@ let perfumes = [
     firstScent: "Floral",
     secondScent: "Fruity",
     longevity: "4 to 5 hours",
-    impression: "Impression not recorded.",
+    impression: null,
   },
   {
     name: "Like This",
@@ -455,7 +455,7 @@ let perfumes = [
     firstScent: "Floral",
     secondScent: "Spicy",
     longevity: "4 to 5 hours",
-    impression: "Impression not recorded.",
+    impression: null,
   },
   {
     name: "Lord of Misrule",
@@ -477,7 +477,7 @@ let perfumes = [
     firstScent: "Floral",
     secondScent: "Fresh",
     longevity: "2 to 3 hours",
-    impression: "Impression not recorded.",
+    impression: null,
   },
   {
     name: "Milk",
@@ -488,7 +488,7 @@ let perfumes = [
     firstScent: "Gourmand",
     secondScent: "Amber",
     longevity: "4 to 5 hours",
-    impression: "Impression not recorded.",
+    impression: null,
   },
   {
     name: "Legacy of Petra-",
@@ -499,7 +499,7 @@ let perfumes = [
     firstScent: "Amber",
     secondScent: "Fresh",
     longevity: "4 to 5 hours",
-    impression: "Impression not recorded.",
+    impression: null,
   },
   {
     name: "Milk+",
@@ -510,7 +510,7 @@ let perfumes = [
     firstScent: "Gourmand",
     secondScent: "Smoky",
     longevity: "4 to 5 hours",
-    impression: "Impression not recorded.",
+    impression: null,
   },
   {
     name: "Moss",
@@ -521,7 +521,7 @@ let perfumes = [
     firstScent: "Chypre",
     secondScent: "Spicy",
     longevity: "4 to 5 hours",
-    impression: "Impression not recorded.",
+    impression: null,
   },
   {
     name: "Lord of Misrule-",
@@ -532,7 +532,7 @@ let perfumes = [
     firstScent: "Amber",
     secondScent: "Green",
     longevity: "4 to 5 hours",
-    impression: "Impression not recorded.",
+    impression: null,
   },
   {
     name: "Moss+",
@@ -543,7 +543,7 @@ let perfumes = [
     firstScent: "Chypre",
     secondScent: "Amber",
     longevity: "4 to 5 hours",
-    impression: "Impression not recorded.",
+    impression: null,
   },
   {
     name: "MYSLF",
@@ -554,7 +554,7 @@ let perfumes = [
     firstScent: "Woody",
     secondScent: "Fresh",
     longevity: "4 to 5 hours",
-    impression: "Impression not recorded.",
+    impression: null,
   },
   {
     name: "No. 5",
@@ -577,7 +577,7 @@ let perfumes = [
     firstScent: "Woody",
     secondScent: "Amber",
     longevity: "4 to 5 hours",
-    impression: "Impression not recorded.",
+    impression: null,
   },
   {
     name: "Moss-",
@@ -588,7 +588,7 @@ let perfumes = [
     firstScent: "Fresh",
     secondScent: "Amber",
     longevity: "4 to 5 hours",
-    impression: "Impression not recorded.",
+    impression: null,
   },
   {
     name: "Paper+",
@@ -599,7 +599,7 @@ let perfumes = [
     firstScent: "Woody",
     secondScent: "Green",
     longevity: "4 to 5 hours",
-    impression: "Impression not recorded.",
+    impression: null,
   },
   {
     name: "Prada Paradoxe",
@@ -610,7 +610,7 @@ let perfumes = [
     firstScent: "Floral",
     secondScent: "Gourmand",
     longevity: "4 to 5 hours",
-    impression: "Impression not recorded.",
+    impression: null,
   },
   {
     name: "Prada Paradoxe Intense",
@@ -621,7 +621,7 @@ let perfumes = [
     firstScent: "Floral",
     secondScent: "Spicy",
     longevity: "4 to 5 hours",
-    impression: "Impression not recorded.",
+    impression: null,
   },
   {
     name: "Pride Edition",
@@ -644,7 +644,7 @@ let perfumes = [
     firstScent: "Floral",
     secondScent: "Woody",
     longevity: "4 to 5 hours",
-    impression: "Impression not recorded.",
+    impression: null,
   },
   {
     name: "Soul of My Soul",
@@ -655,7 +655,7 @@ let perfumes = [
     firstScent: "Spicy",
     secondScent: "Fresh",
     longevity: "4 to 5 hours",
-    impression: "Impression not recorded.",
+    impression: null,
   },
   {
     name: "Taffeta",
@@ -666,7 +666,7 @@ let perfumes = [
     firstScent: "Floral",
     secondScent: "Green",
     longevity: "4 to 5 hours",
-    impression: "Impression not recorded.",
+    impression: null,
   },
   {
     name: "The Favourite",
@@ -677,7 +677,7 @@ let perfumes = [
     firstScent: "Floral",
     secondScent: "Woody",
     longevity: "4 to 5 hours",
-    impression: "Impression not recorded.",
+    impression: null,
   },
   {
     name: "The Ghost in the Shell",
@@ -688,7 +688,7 @@ let perfumes = [
     firstScent: "Fresh",
     secondScent: "Floral",
     longevity: "4 to 5 hours",
-    impression: "Impression not recorded.",
+    impression: null,
   },
   {
     name: "Velvet",
@@ -699,7 +699,7 @@ let perfumes = [
     firstScent: "Amber",
     secondScent: "Gourmand",
     longevity: "4 to 5 hours",
-    impression: "Impression not recorded.",
+    impression: null,
   },
   {
     name: "She Was An Anomaly-",
@@ -710,7 +710,7 @@ let perfumes = [
     firstScent: "Amber",
     secondScent: "Floral",
     longevity: "4 to 5 hours",
-    impression: "Impression not recorded.",
+    impression: null,
   },
   {
     name: "Velvet+",
@@ -721,7 +721,7 @@ let perfumes = [
     firstScent: "Amber",
     secondScent: "Spicy",
     longevity: "4 to 5 hours",
-    impression: "Impression not recorded.",
+    impression: null,
   },
   {
     name: "You Or Someone Like You",
@@ -732,6 +732,6 @@ let perfumes = [
     firstScent: "Fresh",
     secondScent: "Green",
     longevity: "4 to 5 hours",
-    impression: "Impression not recorded.",
+    impression: null,
   },
 ];

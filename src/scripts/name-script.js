@@ -53,21 +53,36 @@ function updateEntryInfo(index) {
 }
 
 function updateScentInfo(index) {
+  // Reinstates Scent Info section if previously hidden
+  document.querySelector("#scent-info").style.display = "block";
+  // Selects Scent Info section to update
+  let resultElement = document.querySelector("#scent-info");
+
   let firstScent = perfumes[index].firstScent;
   let secondScent = perfumes[index].secondScent;
   let impression = perfumes[index].impression;
 
-  // Updates page with query result
-  let resultElement = document.querySelector(".scent-info");
-  resultElement.innerHTML = `
-    <div class="name-result-sub-container">
-     <div class="mid-text">${firstScent.toUpperCase()} AND ${secondScent.toUpperCase()}</div>
+  // Hide elements if Scent Profile or Impression returns null
+  if (firstScent != null) {
+    if (impression != null) {
+      resultElement.innerHTML = `
+  <div class="name-result-sub-container">
+   <div class="max-text">${firstScent.toUpperCase()} AND ${secondScent.toUpperCase()}</div>
+  </div>
+  <hr />
+  <div class="name-result-sub-container">
+   <div><em>${impression}</em></div>
+  </div> `;
+    } else {
+      resultElement.innerHTML = `
+      <div class="name-result-sub-container">
+     <div class="max-text">${firstScent.toUpperCase()} AND ${secondScent.toUpperCase()}</div>
     </div>
-    <hr />
-    <div class="name-result-sub-container">
-     <div><em>${impression}</em></div>
-    </div>
-`;
+     `;
+    }
+  } else {
+    document.querySelector("#scent-info").style.display = "none";
+  }
 }
 
 function updatePerfumeInfo(index) {
@@ -78,7 +93,7 @@ function updatePerfumeInfo(index) {
   let size = perfumes[index].size;
 
   // Updates page with query result
-  let resultElement = document.querySelector(".perfume-info");
+  let resultElement = document.querySelector("#perfume-info");
   resultElement.innerHTML = `
     <div class="name-result-sub-container">
       <div class="title-text">${name.toUpperCase()}</div>
