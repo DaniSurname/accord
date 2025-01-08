@@ -1,3 +1,18 @@
+function displayFooter() {
+  let entries = perfumes.length;
+
+  let brands = new Set(
+    perfumes.map(function (entry) {
+      return `${entry.brand}`;
+    })
+  );
+
+  let footerElement = document.querySelector(".footer-container");
+  footerElement.innerHTML = `
+  <p>This database contains ${entries} perfumes, across ${brands.size} brands.</p>
+    `;
+}
+
 function displayHeader() {
   let headerElement = document.querySelector(".header-container");
   headerElement.innerHTML = `
@@ -15,3 +30,4 @@ function displayHeader() {
 }
 
 displayHeader();
+displayFooter();
