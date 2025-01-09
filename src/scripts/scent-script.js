@@ -20,7 +20,7 @@ function displayScentResults(list, query) {
     // Sets variables for each data type for each filtered array item
     let name = item.name.toUpperCase();
     let brand = item.brand;
-    let scent = item.scent;
+    let scent = `${item.firstScent} and ${item.secondScent}`;
     let longevity = item.longevity;
 
     // Constructs HTML to display for each filtered array item
@@ -65,7 +65,7 @@ function displayScentInfo(scents, query) {
 
 function filterPerfumes(perfumes, query) {
   // Filters 'perfumes' array by scent query
-  let list = perfumes.filter((element) => element.scent.includes(query));
+  let list = perfumes.filter((element) => element.tags.includes(query));
   // Sends results to display function
   displayScentResults(list, query);
   displayScentInfo(scents, query);

@@ -9,6 +9,7 @@ let perfumes = [
     secondScent: "Fresh",
     longevity: "4 to 5 hours",
     impression: null,
+    tags: "Spicy Fresh",
   },
   {
     name: "500 Years",
@@ -20,6 +21,7 @@ let perfumes = [
     secondScent: "Woody",
     longevity: "4 to 5 hours",
     impression: null,
+    tags: "Fresh Woody",
   },
   {
     name: "Activist",
@@ -31,6 +33,7 @@ let perfumes = [
     secondScent: "Spicy",
     longevity: "2 to 3 hours",
     impression: null,
+    tags: "Woody Spicy",
   },
   {
     name: "Agarbathi",
@@ -42,6 +45,7 @@ let perfumes = [
     secondScent: null,
     longevity: "4 to 5 hours",
     impression: null,
+    tags: "",
   },
   {
     name: "Alien Hypersense",
@@ -53,6 +57,7 @@ let perfumes = [
     secondScent: null,
     longevity: "4 to 5 hours",
     impression: null,
+    tags: "",
   },
   {
     name: "AlUla",
@@ -64,6 +69,7 @@ let perfumes = [
     secondScent: "Smoky",
     longevity: "4 to 5 hours",
     impression: null,
+    tags: "Amber Smoky",
   },
   {
     name: "Archives 69",
@@ -75,6 +81,7 @@ let perfumes = [
     secondScent: null,
     longevity: "4 to 5 hours",
     impression: null,
+    tags: "",
   },
   {
     name: "As Sawira",
@@ -86,6 +93,7 @@ let perfumes = [
     secondScent: null,
     longevity: "4 to 5 hours",
     impression: null,
+    tags: "",
   },
   {
     name: "Babylon",
@@ -97,6 +105,7 @@ let perfumes = [
     secondScent: null,
     longevity: "4 to 5 hours",
     impression: null,
+    tags: "",
   },
   {
     name: "Black Opium",
@@ -108,6 +117,7 @@ let perfumes = [
     secondScent: "Spicy",
     longevity: "4 to 5 hours",
     impression: null,
+    tags: "Gourmand Spicy",
   },
   {
     name: "Bleu de Chanel",
@@ -120,6 +130,7 @@ let perfumes = [
     longevity: "8 hours",
     impression:
       "Aromatic, minty, reminds me of Davidoff's Cool Water, but with a slight spice in middle notes.",
+    tags: "Fresh Woody",
   },
   {
     name: "Bois Des Sables",
@@ -131,6 +142,7 @@ let perfumes = [
     secondScent: null,
     longevity: "4 to 5 hours",
     impression: null,
+    tags: "",
   },
   {
     name: "Book",
@@ -142,6 +154,7 @@ let perfumes = [
     secondScent: "Fresh",
     longevity: "4 to 5 hours",
     impression: null,
+    tags: "Woody Fresh",
   },
   {
     name: "Book-",
@@ -153,6 +166,7 @@ let perfumes = [
     secondScent: "Woody",
     longevity: "4 to 5 hours",
     impression: null,
+    tags: "Fresh Woody",
   },
   {
     name: "Book+",
@@ -164,6 +178,7 @@ let perfumes = [
     secondScent: "Green",
     longevity: "4 to 5 hours",
     impression: null,
+    tags: "Smoky Green",
   },
   {
     name: "Brown No. 85",
@@ -175,6 +190,7 @@ let perfumes = [
     secondScent: "Aquatic",
     longevity: "2 to 3 hours",
     impression: null,
+    tags: "Spicy Aquatic",
   },
   {
     name: "Cairo",
@@ -186,6 +202,7 @@ let perfumes = [
     secondScent: null,
     longevity: "4 to 5 hours",
     impression: null,
+    tags: "",
   },
   {
     name: "Classique",
@@ -197,6 +214,7 @@ let perfumes = [
     secondScent: "Gourmand",
     longevity: "2 to 3 hours",
     impression: null,
+    tags: "Floral Gourmand",
   },
   {
     name: "Clean Suede",
@@ -209,6 +227,7 @@ let perfumes = [
     longevity: "4 to 5 hours",
     impression:
       "Recently cleaned leather, with a little of the saddle soap left on. Opens with a rubber smell, like the underside of leather. Dries down into a soapy leather, pine, followed by a clean, peppery vanilla.",
+    tags: "Aldehyde Animalic",
   },
   {
     name: "Cloud Pink",
@@ -220,6 +239,7 @@ let perfumes = [
     secondScent: null,
     longevity: "4 to 5 hours",
     impression: null,
+    tags: "",
   },
   {
     name: "Constantinople",
@@ -231,6 +251,7 @@ let perfumes = [
     secondScent: null,
     longevity: "4 to 5 hours",
     impression: null,
+    tags: "",
   },
   {
     name: "Dandy",
@@ -242,6 +263,7 @@ let perfumes = [
     secondScent: null,
     longevity: "4 to 5 hours",
     impression: null,
+    tags: "",
   },
   {
     name: "Divin' Enfant",
@@ -253,6 +275,7 @@ let perfumes = [
     secondScent: "Fruity",
     longevity: "4 to 5 hours",
     impression: null,
+    tags: "Floral Fruity",
   },
   {
     name: "DKNY 24/7",
@@ -264,6 +287,7 @@ let perfumes = [
     secondScent: null,
     longevity: "4 to 5 hours",
     impression: null,
+    tags: "",
   },
   {
     name: "Eau de Protection",
@@ -275,6 +299,7 @@ let perfumes = [
     secondScent: "Spicy",
     longevity: "4 to 5 hours",
     impression: null,
+    tags: "Floral Spicy",
   },
   {
     name: "Elisabethan Rose",
@@ -286,6 +311,7 @@ let perfumes = [
     secondScent: "Woody",
     longevity: "4 to 5 hours",
     impression: null,
+    tags: "Floral Woody",
   },
   {
     name: "Empressa",
@@ -297,6 +323,7 @@ let perfumes = [
     secondScent: "Spicy",
     longevity: "4 to 5 hours",
     impression: null,
+    tags: "Floral Spicy",
   },
   {
     name: "Exit the King",
@@ -308,6 +335,7 @@ let perfumes = [
     secondScent: null,
     longevity: "4 to 5 hours",
     impression: null,
+    tags: "",
   },
   {
     name: "Experimentum Crucis",
@@ -320,6 +348,7 @@ let perfumes = [
     longevity: "4 to 5 hours",
     impression:
       "Opens with scents of apples, dries down into a pleasant soapy, nose-tickly aldehyde.",
+    tags: "Fresh Aldehyde",
   },
   {
     name: "Fat Electrician",
@@ -331,6 +360,7 @@ let perfumes = [
     secondScent: "Woody",
     longevity: "4 to 5 hours",
     impression: null,
+    tags: "Spicy Woody",
   },
   {
     name: "Fustration",
@@ -342,6 +372,7 @@ let perfumes = [
     secondScent: null,
     longevity: "4 to 5 hours",
     impression: null,
+    tags: "",
   },
   {
     name: "Gabrielle Essence",
@@ -354,6 +385,7 @@ let perfumes = [
     longevity: "4 to 5 hours",
     impression:
       "Fruit warmed floral, fruits range from citruses to jammy, musk base.",
+    tags: "Floral Fruity",
   },
   {
     name: "Gaultier Divine",
@@ -365,6 +397,7 @@ let perfumes = [
     secondScent: "Aquatic",
     longevity: "4 to 5 hours",
     impression: null,
+    tags: "Floral Aquatic",
   },
   {
     name: "Goddess",
@@ -376,6 +409,7 @@ let perfumes = [
     secondScent: null,
     longevity: "4 to 5 hours",
     impression: null,
+    tags: "",
   },
   {
     name: "Gold",
@@ -387,6 +421,7 @@ let perfumes = [
     secondScent: "Gourmand",
     longevity: "4 to 5 hours",
     impression: null,
+    tags: "Woody Gourmand",
   },
   {
     name: "Gold-",
@@ -398,6 +433,7 @@ let perfumes = [
     secondScent: "Woody",
     longevity: "4 to 5 hours",
     impression: null,
+    tags: "Gourmand Woody",
   },
   {
     name: "Gold+",
@@ -409,6 +445,7 @@ let perfumes = [
     secondScent: "Spicy",
     longevity: "4 to 5 hours",
     impression: null,
+    tags: "Gourmand Spicy",
   },
   {
     name: "Halfeti",
@@ -420,6 +457,7 @@ let perfumes = [
     secondScent: "Spicy",
     longevity: "4 to 5 hours",
     impression: null,
+    tags: "Woody Spicy",
   },
   {
     name: "Halfeti Cedar",
@@ -431,6 +469,7 @@ let perfumes = [
     secondScent: null,
     longevity: "4 to 5 hours",
     impression: null,
+    tags: "",
   },
   {
     name: "Halfeti Leather",
@@ -442,6 +481,7 @@ let perfumes = [
     secondScent: null,
     longevity: "4 to 5 hours",
     impression: null,
+    tags: "",
   },
   {
     name: "Hermann A Mes Cotes Me Paraissait Une Ombre",
@@ -453,6 +493,7 @@ let perfumes = [
     secondScent: "Chypre",
     longevity: "4 to 5 hours",
     impression: null,
+    tags: "Spicy Chypre",
   },
   {
     name: "I Want Choo",
@@ -464,6 +505,7 @@ let perfumes = [
     secondScent: null,
     longevity: "8 hours",
     impression: null,
+    tags: "",
   },
   {
     name: "Ianthe Oud",
@@ -476,6 +518,7 @@ let perfumes = [
     longevity: "4 to 5 hours",
     impression:
       "Violet and mimosa flowers. Very powdery, like a floral fragranced powder puff. Gentle scent of wood behind.",
+    tags: "Floral Amber",
   },
   {
     name: "Iris Prima",
@@ -487,6 +530,7 @@ let perfumes = [
     secondScent: null,
     longevity: "4 to 5 hours",
     impression: null,
+    tags: "",
   },
   {
     name: "J'adore",
@@ -498,6 +542,7 @@ let perfumes = [
     secondScent: "Fruity",
     longevity: "4 to 5 hours",
     impression: null,
+    tags: "Floral Fruity",
   },
   {
     name: "Lawn",
@@ -509,6 +554,7 @@ let perfumes = [
     secondScent: "Fresh",
     longevity: "4 to 5 hours",
     impression: null,
+    tags: "Green Fresh",
   },
   {
     name: "Le Male",
@@ -521,6 +567,7 @@ let perfumes = [
     longevity: "2 to 3 hours",
     impression:
       "Summery, floral dessert, too sweet to be an Amber, fresh aromatics in the top notes, mint, lavender and orange blossom.",
+    tags: "Fresh Gourmand",
   },
   {
     name: "Leather Rosa",
@@ -533,6 +580,7 @@ let perfumes = [
     longevity: "4 to 5 hours",
     impression:
       "Warm and understated. Opens with raspberries, bright but jammy, closely followed by expensive leather and a warm, fruity rose. A rich woman's Hermès handbag.",
+    tags: "Floral Woody",
   },
   {
     name: "Legacy of Petra",
@@ -545,6 +593,7 @@ let perfumes = [
     longevity: "4 to 5 hours",
     impression:
       "Sweet and powdery, warm wood smell with a gentle spice, fennel top, liquorice and myrrh with a vanilla base, deep whiskey coloured.",
+    tags: "Amber Woody",
   },
   {
     name: "Les Fleurs du Dechet – I Am Trash",
@@ -556,6 +605,7 @@ let perfumes = [
     secondScent: "Fruity",
     longevity: "4 to 5 hours",
     impression: null,
+    tags: "Floral Fruity",
   },
   {
     name: "Like This",
@@ -567,6 +617,7 @@ let perfumes = [
     secondScent: "Spicy",
     longevity: "4 to 5 hours",
     impression: null,
+    tags: "Floral Spicy",
   },
   {
     name: "Limitless",
@@ -578,6 +629,7 @@ let perfumes = [
     secondScent: null,
     longevity: "4 to 5 hours",
     impression: null,
+    tags: "",
   },
   {
     name: "Lord of Misrule",
@@ -589,6 +641,7 @@ let perfumes = [
     secondScent: "Spicy",
     longevity: "4 to 5 hours",
     impression: "Very sweet opening, almost like a pink lemonade scent.",
+    tags: "Amber Spicy",
   },
   {
     name: "Luna",
@@ -600,6 +653,7 @@ let perfumes = [
     secondScent: "Fresh",
     longevity: "2 to 3 hours",
     impression: null,
+    tags: "Floral Fresh",
   },
   {
     name: "Milk",
@@ -611,6 +665,7 @@ let perfumes = [
     secondScent: "Amber",
     longevity: "4 to 5 hours",
     impression: null,
+    tags: "Gourmand Amber",
   },
   {
     name: "Milk-",
@@ -622,6 +677,7 @@ let perfumes = [
     secondScent: "Fresh",
     longevity: "4 to 5 hours",
     impression: null,
+    tags: "Amber Fresh",
   },
   {
     name: "Milk+",
@@ -633,6 +689,7 @@ let perfumes = [
     secondScent: "Smoky",
     longevity: "4 to 5 hours",
     impression: null,
+    tags: "Gourmand Smoky",
   },
   {
     name: "Moss",
@@ -644,6 +701,7 @@ let perfumes = [
     secondScent: "Spicy",
     longevity: "4 to 5 hours",
     impression: null,
+    tags: "Chypre Spicy",
   },
   {
     name: "Moss-",
@@ -655,6 +713,7 @@ let perfumes = [
     secondScent: "Green",
     longevity: "4 to 5 hours",
     impression: null,
+    tags: "Amber Green",
   },
   {
     name: "Moss+",
@@ -666,6 +725,7 @@ let perfumes = [
     secondScent: "Amber",
     longevity: "4 to 5 hours",
     impression: null,
+    tags: "Chypre Amber",
   },
   {
     name: "MYSLF",
@@ -677,6 +737,7 @@ let perfumes = [
     secondScent: "Fresh",
     longevity: "4 to 5 hours",
     impression: null,
+    tags: "Woody Fresh",
   },
   {
     name: "Naxos",
@@ -688,6 +749,7 @@ let perfumes = [
     secondScent: null,
     longevity: "4 to 5 hours",
     impression: null,
+    tags: "",
   },
   {
     name: "No. 5",
@@ -700,6 +762,7 @@ let perfumes = [
     longevity: "4 to 5 hours",
     impression:
       "Aldehyde forward, champagne bubble nose tickle, expensive, clean, powdery, floral with a hint of spice in the middle.",
+    tags: "Aldehyde Floral",
   },
   {
     name: "Paper",
@@ -711,6 +774,7 @@ let perfumes = [
     secondScent: "Amber",
     longevity: "4 to 5 hours",
     impression: null,
+    tags: "Woody Amber",
   },
   {
     name: "Paper-",
@@ -722,6 +786,7 @@ let perfumes = [
     secondScent: "Amber",
     longevity: "4 to 5 hours",
     impression: null,
+    tags: "Fresh Amber",
   },
   {
     name: "Paper+",
@@ -733,6 +798,7 @@ let perfumes = [
     secondScent: "Green",
     longevity: "4 to 5 hours",
     impression: null,
+    tags: "Woody Green",
   },
   {
     name: "Passage D'Enfer",
@@ -744,6 +810,7 @@ let perfumes = [
     secondScent: null,
     longevity: "2 to 3 hours",
     impression: null,
+    tags: "",
   },
   {
     name: "Prada Paradoxe",
@@ -755,6 +822,7 @@ let perfumes = [
     secondScent: "Gourmand",
     longevity: "4 to 5 hours",
     impression: null,
+    tags: "Floral Gourmand",
   },
   {
     name: "Prada Paradoxe Intense",
@@ -766,6 +834,7 @@ let perfumes = [
     secondScent: "Spicy",
     longevity: "4 to 5 hours",
     impression: null,
+    tags: "Floral Spicy",
   },
   {
     name: "Pride Edition",
@@ -778,6 +847,7 @@ let perfumes = [
     longevity: "2 to 3 hours",
     impression:
       "Strong orange blossom start, clean scent, fresh oranges, mellows into a soft floral.",
+    tags: "Fruity Floral",
   },
   {
     name: "Putain des Palaces",
@@ -789,6 +859,7 @@ let perfumes = [
     secondScent: null,
     longevity: "4 to 5 hours",
     impression: null,
+    tags: "",
   },
   {
     name: "Remarkable People",
@@ -800,6 +871,7 @@ let perfumes = [
     secondScent: null,
     longevity: "4 to 5 hours",
     impression: null,
+    tags: "",
   },
   {
     name: "She Was An Anomaly",
@@ -811,6 +883,7 @@ let perfumes = [
     secondScent: "Woody",
     longevity: "4 to 5 hours",
     impression: null,
+    tags: "Floral Woody",
   },
   {
     name: "Soul of My Soul",
@@ -822,6 +895,7 @@ let perfumes = [
     secondScent: "Fresh",
     longevity: "4 to 5 hours",
     impression: null,
+    tags: "Spicy Fresh",
   },
   {
     name: "Sous le Pont Mirabeau",
@@ -833,6 +907,7 @@ let perfumes = [
     secondScent: null,
     longevity: "4 to 5 hours",
     impression: null,
+    tags: "",
   },
   {
     name: "Spice Must Flow",
@@ -844,6 +919,7 @@ let perfumes = [
     secondScent: null,
     longevity: "4 to 5 hours",
     impression: null,
+    tags: "",
   },
   {
     name: "Taffeta",
@@ -855,6 +931,7 @@ let perfumes = [
     secondScent: "Green",
     longevity: "4 to 5 hours",
     impression: null,
+    tags: "Floral Green",
   },
   {
     name: "The Favourite",
@@ -866,6 +943,7 @@ let perfumes = [
     secondScent: "Woody",
     longevity: "4 to 5 hours",
     impression: null,
+    tags: "Floral Woody",
   },
   {
     name: "The Ghost in the Shell",
@@ -877,6 +955,7 @@ let perfumes = [
     secondScent: "Floral",
     longevity: "4 to 5 hours",
     impression: null,
+    tags: "Fresh Floral",
   },
   {
     name: "Tobacco Vanille",
@@ -888,6 +967,7 @@ let perfumes = [
     secondScent: null,
     longevity: "4 to 5 hours",
     impression: null,
+    tags: "",
   },
   {
     name: "Velvet",
@@ -899,6 +979,7 @@ let perfumes = [
     secondScent: "Gourmand",
     longevity: "4 to 5 hours",
     impression: null,
+    tags: "Amber Gourmand",
   },
   {
     name: "Velvet-",
@@ -910,6 +991,7 @@ let perfumes = [
     secondScent: "Floral",
     longevity: "4 to 5 hours",
     impression: null,
+    tags: "Amber Floral",
   },
   {
     name: "Velvet+",
@@ -921,6 +1003,7 @@ let perfumes = [
     secondScent: "Spicy",
     longevity: "4 to 5 hours",
     impression: null,
+    tags: "Amber Spicy",
   },
   {
     name: "Xtina",
@@ -932,6 +1015,7 @@ let perfumes = [
     secondScent: null,
     longevity: "4 to 5 hours",
     impression: null,
+    tags: "",
   },
   {
     name: "You Or Someone Like You",
@@ -943,5 +1027,6 @@ let perfumes = [
     secondScent: "Green",
     longevity: "4 to 5 hours",
     impression: null,
+    tags: "Fresh Green",
   },
 ];
