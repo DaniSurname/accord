@@ -37,7 +37,8 @@ p {
 }
 
 hr {
-  max-width: 100px;
+  margin: 20px auto;
+  max-width: 50%;
   border-color: rgba(147, 197, 114, 0.3);
 }
 
@@ -47,7 +48,7 @@ a {
 }
 
 button {
-  padding: 15px;
+  padding: 10px;
 
   background-color: rgba(147, 197, 114, 0.2);
   color: white;
@@ -92,6 +93,7 @@ button:hover {
   color: rgba(147, 197, 114, 0.3);
   font-weight: 400;
   text-align: center;
+  margin: 20px;
 
   @media (max-width: 600px) {
     font-size: 0.9em;
@@ -112,11 +114,13 @@ button:hover {
 
 .button-container {
   display: flex;
-  justify-content: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 15px 10px;
-  margin: 20px 0 20px 0;
+  flex-direction: row-reverse;
+  gap: 0 10px;
+
+  @media (max-width: 600px) {
+    flex-direction: row;
+    justify-content: center;
+  }
 }
 
 /* Button type styling */
@@ -129,6 +133,7 @@ button:hover {
   display: flex;
   flex-direction: column;
   gap: 1.5em;
+  margin-top: 25px;
 }
 
 .homepage-button {
@@ -181,5 +186,19 @@ button:hover {
 
   @media (max-width: 600px) {
     font-size: 1em;
+  }
+}
+
+.link-text:hover {
+  color: rgba(147, 197, 114, 0.8);
+  cursor: pointer;
+  transition: 200ms;
+}
+
+/* Hide classes */
+
+.hide-mobile {
+  @media (max-width: 600px) {
+    display: none;
   }
 }

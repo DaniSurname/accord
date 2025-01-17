@@ -154,11 +154,25 @@
 .result-item-container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   gap: 20px 20px;
   font-size: 0.9em;
+  flex-direction: row;
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
 .result-item {
   text-align: left;
+
+  @media (max-width: 600px) {
+    text-align: center;
+  }
+}
+
+.result-item-right {
+  min-width: 150px;
+  text-align: right;
 }

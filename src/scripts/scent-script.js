@@ -64,8 +64,10 @@ function displayScentInfo(scents, query) {
 }
 
 function filterPerfumes(perfumes, query) {
+  let updatedQuery = query.toLowerCase();
+  console.log(updatedQuery);
   // Filters 'perfumes' array by scent query
-  let list = perfumes.filter((element) => element.tags.includes(query));
+  let list = perfumes.filter((element) => element.tags.includes(updatedQuery));
   // Sends results to display function
   displayScentResults(list, query);
   displayScentInfo(scents, query);

@@ -9,7 +9,7 @@ let perfumes = [
     secondScent: "Fresh",
     longevity: "4 to 5 hours",
     impression: null,
-    tags: "Spicy Fresh",
+    tags: "186 the essence vault spicy fresh notes similar to that found in halfeti ® halfeti is a rich woody-floral fragrance. the perfume opens with a weirdly attractive citrus herb and spice vibe while coming in with bergamot saffron and cypress needles. citrus spice bergamot grapefruit saffron atermisia cypress needles halfeti dupe",
   },
   {
     name: "500 Years",
@@ -21,7 +21,7 @@ let perfumes = [
     secondScent: "Woody",
     longevity: "4 to 5 hours",
     impression: null,
-    tags: "Fresh Woody",
+    tags: "500 years etat libre d'orange fresh woody",
   },
   {
     name: "Activist",
@@ -33,7 +33,7 @@ let perfumes = [
     secondScent: "Spicy",
     longevity: "2 to 3 hours",
     impression: null,
-    tags: "Woody Spicy",
+    tags: "activist the body shop woody spicy",
   },
   {
     name: "Agarbathi",
@@ -45,7 +45,7 @@ let perfumes = [
     secondScent: null,
     longevity: "4 to 5 hours",
     impression: null,
-    tags: "",
+    tags: "agarbathi penhaligon's top notes are palo santo pink pepper and bergamot; middle notes are incense olibanum milk and jasmine sambac; base notes are suede sandalwood balsam fir and vetiver. discontinued",
   },
   {
     name: "Alien Hypersense",
@@ -57,7 +57,7 @@ let perfumes = [
     secondScent: null,
     longevity: "4 to 5 hours",
     impression: null,
-    tags: "",
+    tags: "alien hypersense mugler",
   },
   {
     name: "AlUla",
@@ -68,8 +68,9 @@ let perfumes = [
     firstScent: "Amber",
     secondScent: "Smoky",
     longevity: "4 to 5 hours",
-    impression: null,
-    tags: "Amber Smoky",
+    impression:
+      "Immediate vanilla, a strong sweetness accompanied by black pepper nose twitching, on a smoky background. Dries into a powdery, warming and sweetened spice. A hint of salt and sand.",
+    tags: "alula penhaligon's amber smoky immediate vanilla a strong sweetness accompanied by black pepper nose twitching on a smoky background. dries into a powdery warming and sweetened spice. a hint of salt and sand. vanilla winds whisper across the horizon. plum. patchouli. palms reach skyward taller than incense next to a monolith of spice and tobacco. a sweeping desert of saffron born of sand and drenched in sky. plum incense vanilla",
   },
   {
     name: "Archives 69",
@@ -81,7 +82,7 @@ let perfumes = [
     secondScent: null,
     longevity: "4 to 5 hours",
     impression: null,
-    tags: "",
+    tags: "archives 69 etat libre d'orange",
   },
   {
     name: "As Sawira",
@@ -93,7 +94,7 @@ let perfumes = [
     secondScent: null,
     longevity: "4 to 5 hours",
     impression: null,
-    tags: "",
+    tags: "as sawira penhaligon's as sawira by penhaligon's is a woody chypre fragrance for women and men. top notes are saffron and bergamot; middle notes are rose carnation and jasmine; base notes are agarwood (oud) myrhh woodsy notes amber and labdanum. discontinued",
   },
   {
     name: "Babylon",
@@ -101,11 +102,12 @@ let perfumes = [
     brand: "Penhaligon's",
     type: "Eau de Parfum",
     size: "Sample",
-    firstScent: null,
-    secondScent: null,
+    firstScent: "Gourmand",
+    secondScent: "Spicy",
     longevity: "4 to 5 hours",
-    impression: null,
-    tags: "",
+    impression:
+      "Smells like the soft centre of an iced cinnamon bun, with a slight spiced recipe.",
+    tags: "babylon penhaligon's gourmand spicy smells like the soft centre of an iced cinnamon bun with a slight spiced recipe. den of iniquity or majestic wonder of the ancient world? no matter – babylon’s scent is simply divine. warm vanilla distinguished cedar and decadent saffron. some mysteries are best left unsolved. cypriol saffron sandalwood",
   },
   {
     name: "Black Opium",
@@ -114,10 +116,10 @@ let perfumes = [
     type: "Eau de Parfum",
     size: "Sample",
     firstScent: "Gourmand",
-    secondScent: "Spicy",
+    secondScent: "Floral",
     longevity: "4 to 5 hours",
     impression: null,
-    tags: "Gourmand Spicy",
+    tags: "black opium yves saint laurent gourmand floral mum",
   },
   {
     name: "Bleu de Chanel",
@@ -130,7 +132,7 @@ let perfumes = [
     longevity: "8 hours",
     impression:
       "Aromatic, minty, reminds me of Davidoff's Cool Water, but with a slight spice in middle notes.",
-    tags: "Fresh Woody",
+    tags: "bleu de chanel chanel fresh woody aromatic minty reminds me of davidoff's cool water but with a slight spice in middle notes. bleu de chanel eau de parfum is an aromatic-woody fragrance that teams new caledonian sandalwood with notes of ambery cedar and tonka bean. its trail is warm and sensual.",
   },
   {
     name: "Bois Des Sables",
@@ -142,7 +144,7 @@ let perfumes = [
     secondScent: null,
     longevity: "4 to 5 hours",
     impression: null,
-    tags: "",
+    tags: "bois des sables l'artisan parfumeur",
   },
   {
     name: "Book",
@@ -154,7 +156,7 @@ let perfumes = [
     secondScent: "Fresh",
     longevity: "4 to 5 hours",
     impression: null,
-    tags: "Woody Fresh",
+    tags: "book commodity fragrances woody fresh",
   },
   {
     name: "Book-",
@@ -166,7 +168,7 @@ let perfumes = [
     secondScent: "Woody",
     longevity: "4 to 5 hours",
     impression: null,
-    tags: "Fresh Woody",
+    tags: "book- commodity fragrances fresh woody",
   },
   {
     name: "Book+",
@@ -178,7 +180,7 @@ let perfumes = [
     secondScent: "Green",
     longevity: "4 to 5 hours",
     impression: null,
-    tags: "Smoky Green",
+    tags: "book+ commodity fragrances smoky green",
   },
   {
     name: "Brown No. 85",
@@ -190,7 +192,7 @@ let perfumes = [
     secondScent: "Aquatic",
     longevity: "2 to 3 hours",
     impression: null,
-    tags: "Spicy Aquatic",
+    tags: "brown no. 85 next spicy aquatic",
   },
   {
     name: "Cairo",
@@ -198,11 +200,12 @@ let perfumes = [
     brand: "Penhaligon's",
     type: "Eau de Parfum",
     size: "Sample (x2)",
-    firstScent: null,
-    secondScent: null,
+    firstScent: "Amber",
+    secondScent: "Spicy",
     longevity: "4 to 5 hours",
-    impression: null,
-    tags: "",
+    impression:
+      "A peppery tickle on first application, with a warm, sweet spice heart and powdery background. Develops with the sweet powdery scent coming to the forefront, spice behind. Beautiful depth, the kind of body a sommelier describes.",
+    tags: "cairo penhaligon's amber spicy a peppery tickle on first application with a warm sweet spice heart and powdery background. develops with the sweet powdery scent coming to the forefront spice behind. beautiful depth the kind of body a sommelier describes. the sun rising over cairo brings warm saffron spice. soon all is life. damascena rose and labdanum bloom above sensual patchouli. this city’s eau de parfum is ancient but born anew each day. vanilla rose saffron",
   },
   {
     name: "Classique",
@@ -214,7 +217,7 @@ let perfumes = [
     secondScent: "Gourmand",
     longevity: "2 to 3 hours",
     impression: null,
-    tags: "Floral Gourmand",
+    tags: "classique jean paul gaultier floral gourmand",
   },
   {
     name: "Clean Suede",
@@ -227,7 +230,7 @@ let perfumes = [
     longevity: "4 to 5 hours",
     impression:
       "Recently cleaned leather, with a little of the saddle soap left on. Opens with a rubber smell, like the underside of leather. Dries down into a soapy leather, pine, followed by a clean, peppery vanilla.",
-    tags: "Aldehyde Animalic",
+    tags: "clean suede etat libre d'orange aldehyde animalic recently cleaned leather with a little of the saddle soap left on. opens with a rubber smell like the underside of leather. dries down into a soapy leather pine followed by a clean peppery vanilla.",
   },
   {
     name: "Cloud Pink",
@@ -239,7 +242,7 @@ let perfumes = [
     secondScent: null,
     longevity: "4 to 5 hours",
     impression: null,
-    tags: "",
+    tags: "cloud pink ariana grande celebrity ariane grande",
   },
   {
     name: "Constantinople",
@@ -251,7 +254,7 @@ let perfumes = [
     secondScent: null,
     longevity: "4 to 5 hours",
     impression: null,
-    tags: "",
+    tags: "constantinople penhaligon's a scent of the queen of cities. opulent iris mingles with earthy moss along the shore. then night falls. a warm rush of vanilla. sensual yet defiant two worlds entwined.",
   },
   {
     name: "Dandy",
@@ -263,7 +266,7 @@ let perfumes = [
     secondScent: null,
     longevity: "4 to 5 hours",
     impression: null,
-    tags: "",
+    tags: "dandy penhaligon's let’s take it from the top. whisky from the barrel on the rocks. toes start tap-tapping to a melody of raspberry and bergamot. now for the bass line: ambrox oak cedarwood and smoke. will you take another glass? whiskey cedarwood oakwood",
   },
   {
     name: "Divin' Enfant",
@@ -275,7 +278,7 @@ let perfumes = [
     secondScent: "Fruity",
     longevity: "4 to 5 hours",
     impression: null,
-    tags: "Floral Fruity",
+    tags: "divin' enfant etat libre d'orange floral fruity",
   },
   {
     name: "DKNY 24/7",
@@ -283,11 +286,11 @@ let perfumes = [
     brand: "DKNY",
     type: "Eau de Parfum",
     size: "Sample",
-    firstScent: null,
-    secondScent: null,
+    firstScent: "Fruity",
+    secondScent: "Aquatic",
     longevity: "4 to 5 hours",
-    impression: null,
-    tags: "",
+    impression: "Sweet apples, with an aquatic opening.",
+    tags: "dkny 24/7 dkny fruity aquatic sweet apples with an aquatic opening.",
   },
   {
     name: "Eau de Protection",
@@ -299,7 +302,7 @@ let perfumes = [
     secondScent: "Spicy",
     longevity: "4 to 5 hours",
     impression: null,
-    tags: "Floral Spicy",
+    tags: "eau de protection etat libre d'orange floral spicy",
   },
   {
     name: "Elisabethan Rose",
@@ -311,7 +314,7 @@ let perfumes = [
     secondScent: "Woody",
     longevity: "4 to 5 hours",
     impression: null,
-    tags: "Floral Woody",
+    tags: "elisabethan rose penhaligon's floral woody behold the famous tudor rose - the flower of england. inspired by the coming together of houses york and lancaster this airy eau de parfum is a harmonious union of rose hazelnut leaf and vetiver. hazelnut leaf rose centifolia vetiver",
   },
   {
     name: "Empressa",
@@ -323,7 +326,7 @@ let perfumes = [
     secondScent: "Spicy",
     longevity: "4 to 5 hours",
     impression: null,
-    tags: "Floral Spicy",
+    tags: "empressa penhaligon's floral spicy the empressa leaves an impression. her eau de parfum is laced with peach vanilla and shimmering blood orange as bright and stirring as the dawn. her smile? warm lustrous and unforgettable. patchouli bergamot peach",
   },
   {
     name: "Exit the King",
@@ -335,7 +338,7 @@ let perfumes = [
     secondScent: null,
     longevity: "4 to 5 hours",
     impression: null,
-    tags: "",
+    tags: "exit the king etat libre d'orange",
   },
   {
     name: "Experimentum Crucis",
@@ -348,7 +351,7 @@ let perfumes = [
     longevity: "4 to 5 hours",
     impression:
       "Opens with scents of apples, dries down into a pleasant soapy, nose-tickly aldehyde.",
-    tags: "Fresh Aldehyde",
+    tags: "experimentum crucis etat libre d'orange fresh aldehyde opens with scents of apples dries down into a pleasant soapy nose-tickly aldehyde.",
   },
   {
     name: "Fat Electrician",
@@ -360,7 +363,7 @@ let perfumes = [
     secondScent: "Woody",
     longevity: "4 to 5 hours",
     impression: null,
-    tags: "Spicy Woody",
+    tags: "fat electrician etat libre d'orange spicy woody",
   },
   {
     name: "Fustration",
@@ -372,7 +375,7 @@ let perfumes = [
     secondScent: null,
     longevity: "4 to 5 hours",
     impression: null,
-    tags: "",
+    tags: "fustration etat libre d'orange",
   },
   {
     name: "Gabrielle Essence",
@@ -385,7 +388,7 @@ let perfumes = [
     longevity: "4 to 5 hours",
     impression:
       "Fruit warmed floral, fruits range from citruses to jammy, musk base.",
-    tags: "Floral Fruity",
+    tags: "gabrielle essence chanel floral fruity fruit warmed floral fruits range from citruses to jammy musk base. gabrielle chanel essence is a solar and voluptuous composition. like a fragrant nectar the essence is a floral concentrate composed around four flowers: exotic and intense jasmine radiant and fruity ylang-ylang fresh and sparkling orange blossom and creamy highly feminine grasse tuberose.",
   },
   {
     name: "Gaultier Divine",
@@ -397,7 +400,7 @@ let perfumes = [
     secondScent: "Aquatic",
     longevity: "4 to 5 hours",
     impression: null,
-    tags: "Floral Aquatic",
+    tags: "gaultier divine jean paul gaultier floral aquatic will",
   },
   {
     name: "Goddess",
@@ -409,7 +412,7 @@ let perfumes = [
     secondScent: null,
     longevity: "4 to 5 hours",
     impression: null,
-    tags: "",
+    tags: "goddess burberry the power within. burberry goddess eau de parfum is a story of self-discovery found through confidence strength and kindness. this unique gourmand fragrance is led by a powerful trio of vanillas enriched with luminous lavender. an elegant design burberry goddess eau de parfum is the first refillable perfume by burberry.",
   },
   {
     name: "Gold",
@@ -421,7 +424,7 @@ let perfumes = [
     secondScent: "Gourmand",
     longevity: "4 to 5 hours",
     impression: null,
-    tags: "Woody Gourmand",
+    tags: "gold commodity fragrances woody gourmand",
   },
   {
     name: "Gold-",
@@ -433,7 +436,7 @@ let perfumes = [
     secondScent: "Woody",
     longevity: "4 to 5 hours",
     impression: null,
-    tags: "Gourmand Woody",
+    tags: "gold- commodity fragrances gourmand woody",
   },
   {
     name: "Gold+",
@@ -445,7 +448,7 @@ let perfumes = [
     secondScent: "Spicy",
     longevity: "4 to 5 hours",
     impression: null,
-    tags: "Gourmand Spicy",
+    tags: "gold+ commodity fragrances gourmand spicy",
   },
   {
     name: "Halfeti",
@@ -457,7 +460,7 @@ let perfumes = [
     secondScent: "Spicy",
     longevity: "4 to 5 hours",
     impression: null,
-    tags: "Woody Spicy",
+    tags: "halfeti penhaligon's woody spicy so this is love. an intoxicating mysterious fragrance: vigorous grapefruit oud levantine spice and rose tangle in the moonlight. but what’s that upon the riverbank? could it be the fabled black rose? oud bergamot rose signature oud rose bergamot jasmine grapefruit",
   },
   {
     name: "Halfeti Cedar",
@@ -469,7 +472,7 @@ let perfumes = [
     secondScent: null,
     longevity: "4 to 5 hours",
     impression: null,
-    tags: "",
+    tags: "halfeti cedar penhaligon's the hills of halfeti remains unexplored... until now. dried fruits and spice cascade through cedar's lofty canopy into a river of rum minerals and vanilla. new love takes root in this ambery fragrance. mineral accord cedarwood atlas peach",
   },
   {
     name: "Halfeti Leather",
@@ -481,7 +484,7 @@ let perfumes = [
     secondScent: null,
     longevity: "4 to 5 hours",
     impression: null,
-    tags: "",
+    tags: "halfeti leather penhaligon's even us oh-so-stoic brits can't resist the exotic delights found here in halfeti. bold bergamot bustles leather and oud through the haze of the bazaar. the iconic fragrance - but not as one knows it. incense plum bergamot",
   },
   {
     name: "Hermann A Mes Cotes Me Paraissait Une Ombre",
@@ -493,7 +496,7 @@ let perfumes = [
     secondScent: "Chypre",
     longevity: "4 to 5 hours",
     impression: null,
-    tags: "Spicy Chypre",
+    tags: "hermann a mes cotes me paraissait une ombre etat libre d'orange spicy chypre",
   },
   {
     name: "I Want Choo",
@@ -505,7 +508,7 @@ let perfumes = [
     secondScent: null,
     longevity: "8 hours",
     impression: null,
-    tags: "",
+    tags: "i want choo jimmy choo",
   },
   {
     name: "Ianthe Oud",
@@ -518,7 +521,7 @@ let perfumes = [
     longevity: "4 to 5 hours",
     impression:
       "Violet and mimosa flowers. Very powdery, like a floral fragranced powder puff. Gentle scent of wood behind.",
-    tags: "Floral Amber",
+    tags: "ianthe oud liberty floral amber violet and mimosa flowers. very powdery like a floral fragranced powder puff. gentle scent of wood behind. work gift",
   },
   {
     name: "Iris Prima",
@@ -530,7 +533,7 @@ let perfumes = [
     secondScent: null,
     longevity: "4 to 5 hours",
     impression: null,
-    tags: "",
+    tags: "iris prima penhaligon's the regal prima ballerina. delicate yet unflappable. a whirl of iris a rush of bergamot with the strength and surety of leather beneath. perfection in an eau de parfum. bergamot green amber pink pepper iris absolute jasmine sambac hedione paradisone leather vanilla sandalwood vetiver benzoin. discontinued",
   },
   {
     name: "J'adore",
@@ -542,7 +545,7 @@ let perfumes = [
     secondScent: "Fruity",
     longevity: "4 to 5 hours",
     impression: null,
-    tags: "Floral Fruity",
+    tags: "j'adore dior floral fruity",
   },
   {
     name: "Lawn",
@@ -554,7 +557,7 @@ let perfumes = [
     secondScent: "Fresh",
     longevity: "4 to 5 hours",
     impression: null,
-    tags: "Green Fresh",
+    tags: "lawn angela flanders green fresh fresh top notes of black pepper and bergamot conjure the fleeting start of a new day while sappy-green galbanum and earthy patchouli evoke plants fresh with dew. at the heart of the fragrance notes of tuberose jasmine and lemon balm unfold with the warmth of the wearer just as the sun simmers through a misty dawn.",
   },
   {
     name: "Le Male",
@@ -567,7 +570,7 @@ let perfumes = [
     longevity: "2 to 3 hours",
     impression:
       "Summery, floral dessert, too sweet to be an Amber, fresh aromatics in the top notes, mint, lavender and orange blossom.",
-    tags: "Fresh Gourmand",
+    tags: "le male jean paul gaultier fresh gourmand summery floral dessert too sweet to be an amber fresh aromatics in the top notes mint lavender and orange blossom.",
   },
   {
     name: "Leather Rosa",
@@ -580,7 +583,7 @@ let perfumes = [
     longevity: "4 to 5 hours",
     impression:
       "Warm and understated. Opens with raspberries, bright but jammy, closely followed by expensive leather and a warm, fruity rose. A rich woman's Hermès handbag.",
-    tags: "Floral Woody",
+    tags: "leather rosa angela flanders floral woody warm and understated. opens with raspberries bright but jammy closely followed by expensive leather and a warm fruity rose. a rich woman's hermès handbag. luscious damask roses unfold on a bed of smoky oudh and amber. warming on the skin as soft as buttery rich leather. the sultry smoky notes of agar wood and oudh add a leathery tobacco accord while the warmth of amber makes an appearance in the base of this sensuous combination cherishing a heart of rosa damascena and a sweet top note of rose du mai and raspberry.",
   },
   {
     name: "Legacy of Petra",
@@ -592,8 +595,8 @@ let perfumes = [
     secondScent: "Woody",
     longevity: "4 to 5 hours",
     impression:
-      "Sweet and powdery, warm wood smell with a gentle spice, fennel top, liquorice and myrrh with a vanilla base, deep whiskey coloured.",
-    tags: "Amber Woody",
+      "Sweet and powdery, warm wood smell with a gentle spice, fennel top, liquorice and myrrh with a vanilla base, deep whiskey coloured liquid.",
+    tags: "legacy of petra penhaligon's amber woody sweet and powdery warm wood smell with a gentle spice fennel top liquorice and myrrh with a vanilla base deep whiskey coloured liquid. bracing desert winds. a riddle of bergamot and balsam. dusk greets a convoy of fragrant woody amber – and just in time for tea. warm myrrh makes tarrying tempting. but is it all a façade? surely not. fennel seeds myrrh vanilla alex",
   },
   {
     name: "Les Fleurs du Dechet – I Am Trash",
@@ -605,7 +608,7 @@ let perfumes = [
     secondScent: "Fruity",
     longevity: "4 to 5 hours",
     impression: null,
-    tags: "Floral Fruity",
+    tags: "les fleurs du dechet – i am trash etat libre d'orange floral fruity",
   },
   {
     name: "Like This",
@@ -617,7 +620,7 @@ let perfumes = [
     secondScent: "Spicy",
     longevity: "4 to 5 hours",
     impression: null,
-    tags: "Floral Spicy",
+    tags: "like this etat libre d'orange floral spicy",
   },
   {
     name: "Limitless",
@@ -629,7 +632,7 @@ let perfumes = [
     secondScent: null,
     longevity: "4 to 5 hours",
     impression: null,
-    tags: "",
+    tags: "limitless jennifer lopez celebrity jennifer lopez",
   },
   {
     name: "Lord of Misrule",
@@ -641,7 +644,7 @@ let perfumes = [
     secondScent: "Spicy",
     longevity: "4 to 5 hours",
     impression: "Very sweet opening, almost like a pink lemonade scent.",
-    tags: "Amber Spicy",
+    tags: "lord of misrule lush amber spicy very sweet opening almost like a pink lemonade scent.",
   },
   {
     name: "Luna",
@@ -653,7 +656,7 @@ let perfumes = [
     secondScent: "Fresh",
     longevity: "2 to 3 hours",
     impression: null,
-    tags: "Floral Fresh",
+    tags: "luna penhaligon's floral fresh the moon goddess’ bath is as soothing as it is seductive much like her eau de toilette. it shines with orange jasmine soft rose and fir balsam. relax. sink in. surrender has never felt so sweet. jasmine fir balsam bergamot",
   },
   {
     name: "Milk",
@@ -665,7 +668,7 @@ let perfumes = [
     secondScent: "Amber",
     longevity: "4 to 5 hours",
     impression: null,
-    tags: "Gourmand Amber",
+    tags: "milk commodity fragrances gourmand amber",
   },
   {
     name: "Milk-",
@@ -677,7 +680,7 @@ let perfumes = [
     secondScent: "Fresh",
     longevity: "4 to 5 hours",
     impression: null,
-    tags: "Amber Fresh",
+    tags: "milk- commodity fragrances amber fresh",
   },
   {
     name: "Milk+",
@@ -689,7 +692,7 @@ let perfumes = [
     secondScent: "Smoky",
     longevity: "4 to 5 hours",
     impression: null,
-    tags: "Gourmand Smoky",
+    tags: "milk+ commodity fragrances gourmand smoky",
   },
   {
     name: "Moss",
@@ -701,7 +704,7 @@ let perfumes = [
     secondScent: "Spicy",
     longevity: "4 to 5 hours",
     impression: null,
-    tags: "Chypre Spicy",
+    tags: "moss commodity fragrances chypre spicy",
   },
   {
     name: "Moss-",
@@ -713,7 +716,7 @@ let perfumes = [
     secondScent: "Green",
     longevity: "4 to 5 hours",
     impression: null,
-    tags: "Amber Green",
+    tags: "moss- commodity fragrances amber green",
   },
   {
     name: "Moss+",
@@ -725,7 +728,7 @@ let perfumes = [
     secondScent: "Amber",
     longevity: "4 to 5 hours",
     impression: null,
-    tags: "Chypre Amber",
+    tags: "moss+ commodity fragrances chypre amber",
   },
   {
     name: "MYSLF",
@@ -737,7 +740,7 @@ let perfumes = [
     secondScent: "Fresh",
     longevity: "4 to 5 hours",
     impression: null,
-    tags: "Woody Fresh",
+    tags: "myslf yves saint laurent woody fresh",
   },
   {
     name: "Naxos",
@@ -749,7 +752,7 @@ let perfumes = [
     secondScent: null,
     longevity: "4 to 5 hours",
     impression: null,
-    tags: "",
+    tags: "naxos xerjoff restock empty",
   },
   {
     name: "No. 5",
@@ -762,7 +765,7 @@ let perfumes = [
     longevity: "4 to 5 hours",
     impression:
       "Aldehyde forward, champagne bubble nose tickle, expensive, clean, powdery, floral with a hint of spice in the middle.",
-    tags: "Aldehyde Floral",
+    tags: "no. 5 chanel aldehyde floral aldehyde forward champagne bubble nose tickle expensive clean powdery floral with a hint of spice in the middle. the eau de parfum draws inspiration from n°5 parfum which shares the same aldehydic floral signature. this floral bouquet composed around rose and jasmine features bright citrus top notes. aldehydes give the fragrance a unique presence and a smooth touch of vanilla creates an incredibly sensual trail.",
   },
   {
     name: "Paper",
@@ -774,7 +777,7 @@ let perfumes = [
     secondScent: "Amber",
     longevity: "4 to 5 hours",
     impression: null,
-    tags: "Woody Amber",
+    tags: "paper commodity fragrances woody amber",
   },
   {
     name: "Paper-",
@@ -786,7 +789,7 @@ let perfumes = [
     secondScent: "Amber",
     longevity: "4 to 5 hours",
     impression: null,
-    tags: "Fresh Amber",
+    tags: "paper- commodity fragrances fresh amber",
   },
   {
     name: "Paper+",
@@ -798,7 +801,7 @@ let perfumes = [
     secondScent: "Green",
     longevity: "4 to 5 hours",
     impression: null,
-    tags: "Woody Green",
+    tags: "paper+ commodity fragrances woody green",
   },
   {
     name: "Passage D'Enfer",
@@ -810,7 +813,7 @@ let perfumes = [
     secondScent: null,
     longevity: "2 to 3 hours",
     impression: null,
-    tags: "",
+    tags: "passage d'enfer l'artisan parfumeur",
   },
   {
     name: "Prada Paradoxe",
@@ -822,7 +825,7 @@ let perfumes = [
     secondScent: "Gourmand",
     longevity: "4 to 5 hours",
     impression: null,
-    tags: "Floral Gourmand",
+    tags: "prada paradoxe prada floral gourmand mum",
   },
   {
     name: "Prada Paradoxe Intense",
@@ -834,7 +837,7 @@ let perfumes = [
     secondScent: "Spicy",
     longevity: "4 to 5 hours",
     impression: null,
-    tags: "Floral Spicy",
+    tags: "prada paradoxe intense prada floral spicy restock",
   },
   {
     name: "Pride Edition",
@@ -847,7 +850,7 @@ let perfumes = [
     longevity: "2 to 3 hours",
     impression:
       "Strong orange blossom start, clean scent, fresh oranges, mellows into a soft floral.",
-    tags: "Fruity Floral",
+    tags: "pride edition jean paul gaultier fruity floral strong orange blossom start clean scent fresh oranges mellows into a soft floral.",
   },
   {
     name: "Putain des Palaces",
@@ -859,7 +862,7 @@ let perfumes = [
     secondScent: null,
     longevity: "4 to 5 hours",
     impression: null,
-    tags: "",
+    tags: "putain des palaces etat libre d'orange",
   },
   {
     name: "Remarkable People",
@@ -871,7 +874,7 @@ let perfumes = [
     secondScent: null,
     longevity: "4 to 5 hours",
     impression: null,
-    tags: "",
+    tags: "remarkable people etat libre d'orange",
   },
   {
     name: "She Was An Anomaly",
@@ -883,7 +886,7 @@ let perfumes = [
     secondScent: "Woody",
     longevity: "4 to 5 hours",
     impression: null,
-    tags: "Floral Woody",
+    tags: "she was an anomaly etat libre d'orange floral woody",
   },
   {
     name: "Soul of My Soul",
@@ -895,7 +898,7 @@ let perfumes = [
     secondScent: "Fresh",
     longevity: "4 to 5 hours",
     impression: null,
-    tags: "Spicy Fresh",
+    tags: "soul of my soul etat libre d'orange spicy fresh",
   },
   {
     name: "Sous le Pont Mirabeau",
@@ -907,7 +910,7 @@ let perfumes = [
     secondScent: null,
     longevity: "4 to 5 hours",
     impression: null,
-    tags: "",
+    tags: "sous le pont mirabeau etat libre d'orange",
   },
   {
     name: "Spice Must Flow",
@@ -919,7 +922,7 @@ let perfumes = [
     secondScent: null,
     longevity: "4 to 5 hours",
     impression: null,
-    tags: "",
+    tags: "spice must flow etat libre d'orange dune",
   },
   {
     name: "Taffeta",
@@ -931,7 +934,7 @@ let perfumes = [
     secondScent: "Green",
     longevity: "4 to 5 hours",
     impression: null,
-    tags: "Floral Green",
+    tags: "taffeta angela flanders floral green a dewy top note of hyacinth enhances the delicate notes of iris and rose in the heart of taffeta. a touch of smoky vetiver calamus and civet in the base add a sophisticated depth as the perfume warms and opens on the skin.",
   },
   {
     name: "The Favourite",
@@ -943,7 +946,7 @@ let perfumes = [
     secondScent: "Woody",
     longevity: "4 to 5 hours",
     impression: null,
-    tags: "Floral Woody",
+    tags: "the favourite penhaligon's floral woody waiting won't do for this lady. she knows exactly what goes on behind palace doors and her golden mimosa sways society's opinion. her majestic scent of iris and musk greets with a darling smile as she begins to emerge on a sandalwood stage. violet leaf orris musk",
   },
   {
     name: "The Ghost in the Shell",
@@ -955,7 +958,7 @@ let perfumes = [
     secondScent: "Floral",
     longevity: "4 to 5 hours",
     impression: null,
-    tags: "Fresh Floral",
+    tags: "the ghost in the shell etat libre d'orange fresh floral",
   },
   {
     name: "Tobacco Vanille",
@@ -967,7 +970,7 @@ let perfumes = [
     secondScent: null,
     longevity: "4 to 5 hours",
     impression: null,
-    tags: "",
+    tags: "tobacco vanille tom ford",
   },
   {
     name: "Velvet",
@@ -979,7 +982,7 @@ let perfumes = [
     secondScent: "Gourmand",
     longevity: "4 to 5 hours",
     impression: null,
-    tags: "Amber Gourmand",
+    tags: "velvet commodity fragrances amber gourmand",
   },
   {
     name: "Velvet-",
@@ -991,7 +994,7 @@ let perfumes = [
     secondScent: "Floral",
     longevity: "4 to 5 hours",
     impression: null,
-    tags: "Amber Floral",
+    tags: "velvet- commodity fragrances amber floral",
   },
   {
     name: "Velvet+",
@@ -1003,7 +1006,7 @@ let perfumes = [
     secondScent: "Spicy",
     longevity: "4 to 5 hours",
     impression: null,
-    tags: "Amber Spicy",
+    tags: "velvet+ commodity fragrances amber spicy",
   },
   {
     name: "Xtina",
@@ -1015,7 +1018,7 @@ let perfumes = [
     secondScent: null,
     longevity: "4 to 5 hours",
     impression: null,
-    tags: "",
+    tags: "xtina christina aguilera celebrity christina aguilera",
   },
   {
     name: "You Or Someone Like You",
@@ -1027,6 +1030,6 @@ let perfumes = [
     secondScent: "Green",
     longevity: "4 to 5 hours",
     impression: null,
-    tags: "Fresh Green",
+    tags: "you or someone like you etat libre d'orange fresh green",
   },
 ];
