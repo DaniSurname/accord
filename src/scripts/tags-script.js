@@ -20,52 +20,55 @@ function displaySearchResults(list, query) {
     // Sets variables for each data type for each filtered array item
     let name = item.name.toUpperCase();
     let brand = item.brand;
-    let scent = `${item.firstScent} and ${item.secondScent}`;
     let longevity = item.longevity;
     let impression = item.impression;
 
     if (item.firstScent === null) {
       // Injects HTML for entries with no scent values
-
       resultHtml =
         resultHtml +
         `<div class="list-results-container">
         <div class="result-item-container">
-        <div class="result-item">
+        <div class="result-item name">
             <p class="mid-text link-text" onclick="saveQuery()" id="${name}">${name}</p>
             <p class="caption-text">by ${brand}</p>
+        </div>
+          <div class="result-item tags">
+            <p class="tag-box">${longevity}</p>
         </div>
         </div>
         </div>`;
     } else if (item.impression === null) {
-      // Injects HTML for entries with no scent values
-
+      // Injects HTML for entries with no impression
       resultHtml =
         resultHtml +
         `<div class="list-results-container">
         <div class="result-item-container">
-        <div class="result-item">
+        <div class="result-item name">
             <p class="mid-text link-text" onclick="saveQuery()" id="${name}">${name}</p>
             <p class="caption-text">by ${brand}</p>
         </div>
-        <div class="result-item-right button-container">
-            <button>${item.firstScent}</button>
-            <button>${item.secondScent}</button>
+        <div class="result-item tags">
+          <p class="tag-box">${longevity}</p>
+          <p class="tag-box scent">${item.firstScent}</p>
+          <p class="tag-box scent">${item.secondScent}</p>
         </div>
         </div>
     </div>`;
     } else {
+      // Injects HTML for complete entries
       resultHtml =
         resultHtml +
         `<div class="list-results-container">
         <div class="result-item-container">
-        <div class="result-item">
+        <div class="result-item name">
             <p class="mid-text link-text" onclick="saveQuery()" id="${name}">${name}</p>
             <p class="caption-text">by ${brand}</p>
         </div>
-        <div class="result-item-right button-container">
-            <button>${item.firstScent}</button>
-            <button>${item.secondScent}</button>
+        <div class="result-item tags">
+          <p class="tag-box">${longevity}</p>
+          <p class="tag-box scent">${item.firstScent}</p>
+          <p class="tag-box scent">${item.secondScent}</p>
         </div>
         </div>
         <hr >
@@ -86,7 +89,6 @@ function filterQuery(query) {
   let list = perfumes.filter((element) => element.tags.includes(updatedQuery));
 
   // Sends results to display function
-
   displaySearchResults(list, query);
 }
 

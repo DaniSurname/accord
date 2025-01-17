@@ -19,25 +19,20 @@ function displayScentResults(list, query) {
   list.forEach(function (item) {
     // Sets variables for each data type for each filtered array item
     let name = item.name.toUpperCase();
-    let brand = item.brand;
-    let scent = `${item.firstScent} and ${item.secondScent}`;
-    let longevity = item.longevity;
 
     // Constructs HTML to display for each filtered array item
     resultHtml =
       resultHtml +
       `<div class="list-results-container">
         <div class="result-item-container">
-        <div class="result-item">
-            <p class="mid-text">${name}</p>
-            <p class="caption-text">by ${brand}</p>
+        <div class="result-item name">
+            <p class="mid-text link-text" onclick="saveQuery()" id="${name}">${name}</p>
+            <p class="caption-text">by ${item.brand}</p>
         </div>
-        <div>
-            <p class="mid-text">${scent}</p>
-            <p class="caption-text">${longevity}</p>
-        </div>
-        <div>
-        <button onclick="saveQuery()" id="${name}">🔍</button>
+        <div class="result-item tags">
+          <p class="tag-box">${item.longevity}</p>
+          <p class="tag-box scent">${item.firstScent}</p>
+          <p class="tag-box scent">${item.secondScent}</p>
         </div>
         </div>
     </div>`;

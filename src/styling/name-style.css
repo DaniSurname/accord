@@ -37,6 +37,7 @@
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
   border: none;
   border-radius: 5px;
+  color: white;
 }
 
 #search-input::placeholder {

@@ -126,11 +126,12 @@ function getPerfumeID(perfumeFinder, input) {
   if (index >= 0) {
     updatePerfumeInfo(index);
   } else {
+    document.querySelector("#scent-info").style.display = "none";
     let resultElement = document.querySelector(".name-result-container");
     resultElement.innerHTML = `
     <div class="name-result-sub-container">
     <div class="mid-text">No results found for:</div>
-    <div class="title-text">${input.toUpperCase()}</div>
+    <div class="title-text">'${input.toUpperCase()}'</div>
     </div>
     <div class="name-result-sub-container">
     <button class="event-button" onclick="location.reload()">Reload Page</button>
