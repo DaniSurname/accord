@@ -38,6 +38,10 @@
   border: none;
   border-radius: 5px;
   color: white;
+
+  @media (max-width: 600px) {
+    border-radius: 25px;
+  }
 }
 
 #search-input::placeholder {
@@ -45,6 +49,10 @@
   opacity: 0.5;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 1.2em;
+
+  @media (max-width: 600px) {
+    text-align: center;
+  }
 }
 
 #search-button {

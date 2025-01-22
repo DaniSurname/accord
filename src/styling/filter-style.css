@@ -21,6 +21,11 @@
   border-radius: 5px;
   background-color: rgba(147, 197, 114, 0.2);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+
+  @media (max-width: 600px) {
+    border-radius: 25px;
+    justify-content: space-around;
+  }
 }
 
 .dropdown-button:hover {
@@ -37,7 +42,7 @@
 .arrow {
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
-  border-top: 6px solid #fff;
+  border-top: 6px solid #949c90;
   transition: transform ease-in-out 0.3s;
 }
 
@@ -151,9 +156,9 @@
   text-align: center;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 
-
   @media (max-width: 600px) {
-      padding: 25px;
+    padding: 25px;
+  }
 }
 
 .result-item-container {
