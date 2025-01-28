@@ -15,11 +15,12 @@
   padding: 15px;
   width: 100%;
   cursor: pointer;
-  color: #949c90;
+  /* color: #949c90; */
+  color: rgba(233, 237, 234, 0.4);
 
   border: 0;
   border-radius: 5px;
-  background-color: rgba(147, 197, 114, 0.2);
+  background-color: rgba(178, 190, 181, 0.2);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 
   @media (max-width: 600px) {
@@ -29,12 +30,12 @@
 }
 
 .dropdown-button:hover {
-  background-color: rgba(147, 197, 114, 0.3);
+  background-color: rgba(178, 190, 181, 0.3);
   transform: none;
 }
 
 .dropdown-button.menu-open {
-  background-color: rgba(147, 197, 114, 0.3);
+  background-color: rgba(178, 190, 181, 0.3);
 }
 
 /* Dropdown arrow styling */
@@ -62,7 +63,7 @@
 
   visibility: hidden;
   opacity: 0;
-  transition: opacity 300ms ease-in-out;
+  transition: opacity 120ms ease-in-out;
 
   @media (max-width: 600px) {
     padding-left: 2em;
@@ -79,19 +80,20 @@
   margin: 0 auto;
   padding: 10px;
 
-  background-color: #2a3721;
-  border-bottom: solid 1px;
-  border-color: rgba(147, 197, 114, 0.1);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  background-color: rgba(233, 237, 234, 0.3);
+  backdrop-filter: blur(1px);
+  /* border-bottom: solid 1px; */
+  /* border-color: rgba(233, 237, 234, 0.1); */
+  /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4); */
 
   font-size: 1em;
-  color: #fff;
+  color: rgba(233, 237, 234);
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS";
   text-align: center;
 }
 
 .dropdown-content li:hover {
-  background-color: #3f5732;
+  background-color: rgba(233, 237, 234, 0.5);
 }
 
 /* Further info styling */
@@ -112,7 +114,8 @@
   margin-bottom: 0;
   gap: 1.2em;
   text-align: center;
-  color: rgba(147, 197, 114, 0.5);
+  /* color: rgba(178, 190, 181, 0.5); */
+  color: rgba(233, 237, 234);
 
   @media (max-width: 600px) {
     flex-direction: column;
@@ -134,14 +137,14 @@
 .further-info-about {
   flex: 3;
   font-size: 0.8em;
-  border-left: 1px solid rgba(147, 197, 114, 0.2);
+  border-left: 1px solid rgba(178, 190, 181, 0.2);
   padding-left: 2em;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 
   @media (max-width: 600px) {
     width: 80%;
     border: 0;
-    border-top: 1px solid rgba(147, 197, 114, 0.2);
+    border-top: 1px solid rgba(178, 190, 181, 0.2);
     padding: 1em 0 0.5em 0;
   }
 }
@@ -152,7 +155,7 @@
   margin-top: 20px;
   padding: 20px;
   border-radius: 5px;
-  background: rgba(147, 197, 114, 0.1);
+  background: rgba(178, 190, 181, 0.1);
   text-align: center;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 

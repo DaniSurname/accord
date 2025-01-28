@@ -1,15 +1,15 @@
 /* Result styling*/
 
 .name-result-container {
-  margin: 20px;
+  margin: 30px 20px;
   padding: 30px 50px;
   border-radius: 5px;
-  background: rgba(147, 197, 114, 0.1);
+  background: rgba(178, 190, 181, 0.1);
   text-align: center;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 
   @media (max-width: 600px) {
-    margin: 20px 0;
+    margin: 40px 0;
     padding: 30px;
   }
 }
@@ -32,12 +32,11 @@
 #search-input {
   width: 100%;
   padding: 15px;
-  margin-bottom: 10px;
-  background-color: rgba(147, 197, 114, 0.2);
+  background-color: rgba(178, 190, 181, 0.2);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
   border: none;
   border-radius: 5px;
-  color: white;
+  color: rgba(233, 237, 234);
 
   @media (max-width: 600px) {
     border-radius: 25px;
@@ -45,7 +44,7 @@
 }
 
 #search-input::placeholder {
-  color: white;
+  color: rgba(233, 237, 234);
   opacity: 0.5;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 1.2em;
@@ -92,7 +91,7 @@
 .result-index {
   flex: 1;
   font-size: 1.1em;
-  color: rgba(147, 197, 114, 0.4);
+  color: rgba(233, 237, 234, 1);
 
   @media (max-width: 600px) {
     font-size: 1.3em;
@@ -103,12 +102,12 @@
 .index-title {
   font-size: 0.8em;
   font-style: italic;
-  color: rgba(147, 197, 114, 0.3);
+  color: rgba(233, 237, 234, 0.9);
 }
 
 .current {
-  border-left: 1px solid rgba(147, 197, 114, 0.2);
-  border-right: 1px solid rgba(147, 197, 114, 0.2);
+  border-left: 1px solid rgba(233, 237, 234, 0.7);
+  border-right: 1px solid rgba(233, 237, 234, 0.7);
   padding: 0 1.4em;
   margin: 0.6em;
 
@@ -116,17 +115,17 @@
     margin: 0;
     padding: 1em;
     border: 0;
-    border-top: 1px solid rgba(147, 197, 114, 0.2);
-    border-bottom: 1px solid rgba(147, 197, 114, 0.2);
+    border-top: 1px solid rgba(233, 237, 234, 0.7);
+    border-bottom: 1px solid rgba(233, 237, 234, 0.7);
   }
 }
 
 a.not-current {
-  color: rgba(147, 197, 114, 0.4);
+  color: rgba(233, 237, 234, 0.7);
 }
 
 a.not-current:hover {
-  color: rgba(147, 197, 114, 0.8);
+  color: rgba(233, 237, 234, 1);
   cursor: pointer;
   transition: 200ms;
 }
