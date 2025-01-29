@@ -399,8 +399,9 @@ let perfumes = [
     firstScent: "Floral",
     secondScent: "Aquatic",
     longevity: "4 to 5 hours",
-    impression: null,
-    tags: "gaultier divine jean paul gaultier floral aquatic will",
+    impression:
+      "Will's current signature fragrance. White florals and sweet dessert foods, with a salty sea freshness.",
+    tags: "gaultier divine jean paul gaultier floral aquatic will's current signature fragrance. white florals and sweet dessert foods with a salty sea freshness. lily meringue sea breeze salt femininity goddess gourmand marine floral will",
   },
   {
     name: "Goddess",
@@ -1031,5 +1032,17 @@ let perfumes = [
     longevity: "4 to 5 hours",
     impression: null,
     tags: "you or someone like you etat libre d'orange fresh green",
+  },
+  {
+    name: "First Go",
+    finder: null,
+    brand: null,
+    type: null,
+    size: null,
+    firstScent: null,
+    secondScent: null,
+    longevity: null,
+    impression: null,
+    tags: null,
   },
 ];

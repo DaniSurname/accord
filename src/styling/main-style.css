@@ -4,9 +4,7 @@ body {
   max-width: 600px;
   margin: 0 auto;
   color: rgba(233, 237, 234);
-  background: linear-gradient(-45deg, #28544b, #acbd86, #df6d2d, #c84c05);
-  background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
+  background: #acbd86;
   height: 100vh;
 }
 
@@ -126,6 +124,9 @@ button:hover {
   border-radius: 5px;
   background: rgba(178, 190, 181, 0.1);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  background: linear-gradient(-45deg, #28544b, #acbd86, #df6d2d, #c84c05);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
 
   @media (max-width: 600px) {
     margin: 40px 0;
@@ -148,7 +149,8 @@ button:hover {
 /* Button type styling */
 
 .navigation-button {
-  background-color: rgba(178, 190, 181, 0.1);
+  background-color: rgba(223, 109, 45, 0.2);
+  margin-top: -5px;
 }
 
 .homepage-button-container {
