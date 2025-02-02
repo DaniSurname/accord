@@ -109,7 +109,7 @@ button:hover {
   color: rgba(233, 237, 234);
   font-weight: 400;
   text-align: center;
-  margin: 20px;
+  padding-bottom: 30px;
 
   @media (max-width: 600px) {
     margin: 40px;
