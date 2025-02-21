@@ -39,7 +39,8 @@
   color: rgba(233, 237, 234);
 
   @media (max-width: 600px) {
-    border-radius: 25px;
+    padding: 20px;
+    font-size: 1em;
   }
 }
 

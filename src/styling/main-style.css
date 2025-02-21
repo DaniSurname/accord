@@ -1,7 +1,6 @@
 /* Main element styling */
 
 body {
-  max-width: 600px;
   margin: 0 auto;
   color: rgba(233, 237, 234);
   background: #acbd86;
@@ -55,7 +54,7 @@ p {
 hr {
   margin: 20px auto;
   max-width: 50%;
-  border-color: rgba(233, 237, 234, 0.7);
+  border: solid 1px rgba(233, 237, 234, 0.5);
 }
 
 a {
@@ -119,7 +118,8 @@ button:hover {
 }
 
 .container {
-  margin: 30px 20px;
+  max-width: 75%;
+  margin: 30px auto;
   padding: 30px;
   border-radius: 5px;
   background: rgba(178, 190, 181, 0.1);
@@ -129,8 +129,9 @@ button:hover {
   animation: gradient 15s ease infinite;
 
   @media (max-width: 600px) {
-    margin: 40px 0;
-    padding: 40px 30px 40px 30px;
+    max-width: 100%;
+    margin: 40px auto;
+    padding: 40px 30px;
     border-radius: 0px;
   }
 }
@@ -151,6 +152,11 @@ button:hover {
 .navigation-button {
   background-color: rgba(223, 109, 45, 0.2);
   margin-top: -5px;
+
+  @media (max-width: 600px) {
+    font-size: 1.2em;
+    padding: 15px;
+  }
 }
 
 .homepage-button-container {

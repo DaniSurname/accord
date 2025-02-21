@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/styling/main-style.css" />
+    <link rel="stylesheet" href="src/styling/filter-style.css" />
+    <title>Accord | Search by Scent</title>
+  </head>
+  <body>
+    <div class="header-container"></div>
+    <div class="container">
+      <div class="dropdown-container">
+        <button
+          class="dropdown-button"
+          id="scent-dropdown"
+          onclick="checkDropdown()"
+        >
+          <span class="hide-mobile">Search by </span>
+          <span class="dropdown-title">Scent</span>
+        </button>
+        <button
+          class="dropdown-button"
+          id="brand-dropdown"
+          onclick="checkDropdown()"
+        >
+          <span class="hide-mobile">Search by </span>
+          <span class="dropdown-title">Brand</span>
+        </button>
+        <!-- <button
+          class="dropdown-button"
+          id="tags-dropdown"
+          onclick="checkDropdown()"
+        >
+          <span class="hide-mobile">Search by </span>
+          <span class="dropdown-title">Tags</span>
+        </button> -->
+      </div>
+
+      <div class="dropdown-content" id="scent-dropdown-buttons"></div>
+      <div class="dropdown-content" id="brand-dropdown-buttons"></div>
+      <!-- <div class="dropdown-content" id="tags-dropdown-buttons">
+        <form id="search-bar">
+          <input
+            type="search"
+            id="search-input"
+            placeholder="Search by database tags..."
+            required
+          />
+          <input
+            class="hide-mobile"
+            type="submit"
+            id="search-button"
+            value="🔍"
+          />
+        </form>
+      </div> -->
+
+      <div class="counter" id="counter"></div>
+      <div class="further-info-container" id="scent-info"></div>
+
+      <div id="list-results"></div>
+    </div>
+    <div class="footer-container"></div>
+    <script src="src/data/perfume-data.js"></script>
+    <script src="src/scripts/main-script.js"></script>
+    <script src="src/data/other-data.js"></script>
+    <script src="src/scripts/scent-script.js"></script>
+  </body>
+</html>

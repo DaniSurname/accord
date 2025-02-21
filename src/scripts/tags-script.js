@@ -80,13 +80,18 @@ function displaySearchResults(list, query) {
   // Updates page with collect HTML for filtered results
   let resultElement = document.querySelector("#list-results");
   resultElement.innerHTML = resultHtml;
+  // Updates counter element with filtered list length
+  let counterElement = document.querySelector("#counter");
+  counterElement.innerHTML = `${list.length} result(s) found for ${query}:`;
 }
 
 function filterQuery(query) {
   let updatedQuery = query.toLowerCase();
 
   // Filters 'perfumes' array by query
-  let list = perfumes.filter((element) => element.tags.includes(updatedQuery));
+  let list = perfumes.filter((element) =>
+    element.complete.includes(updatedQuery)
+  );
 
   // Sends results to display function
   displaySearchResults(list, query);
