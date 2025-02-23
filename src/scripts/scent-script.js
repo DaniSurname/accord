@@ -197,7 +197,7 @@ function injectButtons(scents, brands) {
 
     scentButtonsHTML =
       scentButtonsHTML +
-      `<button id="${name}" onclick="getScent()">${item.emoji} ${name}</button>`;
+      `<button class="dropdown-option" id="${name}" onclick="getScent()">${item.emoji} ${name}</button>`;
   });
 
   brands.forEach(function (item) {
@@ -205,7 +205,7 @@ function injectButtons(scents, brands) {
 
     brandsButtonsHTML =
       brandsButtonsHTML +
-      `<button id="${name}" onclick="getScent()">${name}</button>`;
+      `<button class="dropdown-option" id="${name}" onclick="getScent()">${name}</button>`;
   });
 
   let scentButtons = document.querySelector("#scent-dropdown-buttons");

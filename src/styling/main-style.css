@@ -74,10 +74,6 @@ button {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 1em;
   text-align: center;
-
-  @media (max-width: 600px) {
-    font-size: 1.1em;
-  }
 }
 
 button:hover {
@@ -130,8 +126,8 @@ button:hover {
 
   @media (max-width: 600px) {
     max-width: 100%;
-    margin: 40px auto;
-    padding: 40px 30px;
+    margin: 10% auto;
+    padding: 10% 8%;
     border-radius: 0px;
   }
 }
@@ -271,6 +267,8 @@ button:hover {
 /* Hide classes */
 
 .hide-mobile {
+  pointer-events: none;
+
   @media (max-width: 600px) {
     display: none;
   }

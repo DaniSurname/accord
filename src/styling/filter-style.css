@@ -23,6 +23,8 @@
 }
 
 .dropdown-title {
+  pointer-events: none;
+
   @media (max-width: 600px) {
     font-family: serif;
     text-transform: uppercase;
@@ -44,6 +46,13 @@
   flex-wrap: wrap;
   gap: 5px;
   justify-content: center;
+}
+
+.dropdown-option {
+  @media (max-width: 600px) {
+    font-size: 0.8em;
+    gap: 6%;
+  }
 }
 
 /* Dropdown arrow styling */
