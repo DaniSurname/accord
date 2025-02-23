@@ -53,10 +53,10 @@ function displayScentResults(list, query) {
       // Injects HTML for entries with no scent values
       resultHtml =
         resultHtml +
-        `<div class="list-results-container">
+        `<div class="list-results-container" onclick="saveQuery()" id="${name}">
         <div class="result-item-container">
         <div class="result-item name">
-            <p class="mid-text link-text" onclick="saveQuery()" id="${name}">${name}</p>
+            <p class="mid-text link-text">${name}</p>
             <p class="caption-text">by ${brand}</p>
         </div>
           <div class="result-item tags">
@@ -68,10 +68,10 @@ function displayScentResults(list, query) {
       // Injects HTML for entries with no impression
       resultHtml =
         resultHtml +
-        `<div class="list-results-container">
+        `<div class="list-results-container" onclick="saveQuery()" id="${name}">
         <div class="result-item-container">
         <div class="result-item name">
-            <p class="mid-text link-text" onclick="saveQuery()" id="${name}">${name}</p>
+            <p class="mid-text link-text">${name}</p>
             <p class="caption-text">by ${brand}</p>
         </div>
         <div class="result-item tags">
@@ -85,10 +85,10 @@ function displayScentResults(list, query) {
       // Injects HTML for complete entries
       resultHtml =
         resultHtml +
-        `<div class="list-results-container">
+        `<div class="list-results-container" onclick="saveQuery()" id="${name}">
         <div class="result-item-container">
         <div class="result-item name">
-            <p class="mid-text link-text" onclick="saveQuery()" id="${name}">${name}</p>
+            <p class="mid-text link-text">${name}</p>
             <p class="caption-text">by ${brand}</p>
         </div>
         <div class="result-item tags">
