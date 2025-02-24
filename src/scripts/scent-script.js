@@ -143,7 +143,7 @@ function getScent() {
   // Sends query to filter function
   filterPerfumes(perfumes, query);
 
-  console.log(`Clicked: ${query}`);
+  console.log(`Filtering database for: ${query}`);
 }
 
 // Toggles button dropdowns

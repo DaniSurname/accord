@@ -29,5 +29,46 @@ function displayHeader() {
     `;
 }
 
+function injectProgressBars() {
+  // Checks perfume entires for null values in firstScent and impression
+  let missingScent = perfumes.filter(function (perfumes) {
+    return perfumes.firstScent === null;
+  });
+
+  let missingImpression = perfumes.filter(function (perfumes) {
+    return perfumes.impression === null;
+  });
+
+  let total = perfumes.length;
+  let scents = missingScent.length;
+  let impressions = missingImpression.length;
+
+  let scentsPercent = Math.floor(((total - scents) / total) * 100) + "%";
+  console.log(`${scentsPercent} of scent profiles complete`);
+  let impressionsPercent =
+    Math.floor(((total - impressions) / total) * 100) + "%";
+  console.log(`${impressionsPercent} of impressions complete`);
+
+  let progressBarElement = document.querySelector("#progress-bars-container");
+  progressBarElement.innerHTML = `
+        <p>Of ${total} perfumes entered into the database:</p>
+        <div class="meter">
+          <span style="width: ${scentsPercent}" </span>
+        </div>
+        <p class="progress-text">${scents} entries need a scent profile recording.</p>
+        <div class="meter">
+          <span style="width: ${impressionsPercent}"></span>
+        </div>
+        <p class="progress-text">${impressions} entries need an impression recording.</p>
+  `;
+}
+
+function checkPage() {
+  if (document.querySelector("#progress-bars-container")) {
+    injectProgressBars();
+  }
+}
+
+checkPage();
 displayHeader();
 displayFooter();
