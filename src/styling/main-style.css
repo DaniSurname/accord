@@ -228,6 +228,10 @@ button:hover {
 
 .progress-text {
   text-align: right;
+
+  @media (max-width: 600px) {
+    line-height: 1.2em;
+  }
 }
 
 .meter {
@@ -281,6 +285,15 @@ button:hover {
 }
 
 .mid-text {
+  font-size: 1.2em;
+
+  @media (max-width: 600px) {
+    font-size: 1.2em;
+  }
+}
+
+.card-title {
+  font-family: serif;
   font-size: 1.2em;
 
   @media (max-width: 600px) {

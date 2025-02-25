@@ -27,7 +27,7 @@ function displayScentResults(list, query) {
         `<div class="list-results-container" onclick="saveQuery(this.id)" id="${name}">
         <div class="result-item-container">
         <div class="result-item name">
-            <p class="mid-text">${name}</p>
+            <p class="card-title">${name}</p>
             <p class="caption-text">by ${brand}</p>
         </div>
           <div class="result-item tags">
@@ -42,7 +42,7 @@ function displayScentResults(list, query) {
         `<div class="list-results-container" onclick="saveQuery(this.id)" id="${name}">
         <div class="result-item-container">
         <div class="result-item name">
-            <p class="mid-text">${name}</p>
+            <p class="card-title">${name}</p>
             <p class="caption-text">by ${brand}</p>
         </div>
         <div class="result-item tags">
@@ -59,7 +59,7 @@ function displayScentResults(list, query) {
         `<div class="list-results-container" onclick="saveQuery(this.id)" id="${name}">
         <div class="result-item-container">
         <div class="result-item name">
-            <p class="mid-text">${name}</p>
+            <p class="card-title">${name}</p>
             <p class="caption-text">by ${brand}</p>
         </div>
         <div class="result-item tags">

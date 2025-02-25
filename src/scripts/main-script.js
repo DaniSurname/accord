@@ -51,7 +51,7 @@ function injectProgressBars() {
 
   let progressBarElement = document.querySelector("#progress-bars-container");
   progressBarElement.innerHTML = `
-        <p>Of ${total} perfumes entered into the database:</p>
+        <p style="text-align: left">Of ${total} perfumes entered into the database:</p>
         <div class="meter">
           <span style="width: ${scentsPercent}" </span>
         </div>
