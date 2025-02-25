@@ -1,17 +1,10 @@
-// Functions to allow click thru to Name entry page:
-
-function openName() {
-  // Sends user to Name page
-  window.location.href = "name.html";
-}
+// Function to allow click thru to Name entry page:
 
 function saveQuery(id) {
-  // Collects the ID of the 🔍 button clicked
-  let query = id;
   // Records ID in local storage
-  window.localStorage.setItem("savedQuery", query);
+  window.localStorage.setItem("savedQuery", id);
   // Triggers switch page function
-  openName();
+  window.location.href = "entry.html";
 }
 
 // Functions to display filtered results:
@@ -19,28 +12,6 @@ function saveQuery(id) {
 function displayScentResults(list, query) {
   // Sets variable to collect HTML code in
   let resultHtml = "";
-
-  // list.forEach(function (item) {
-  //   // Sets variables for each data type for each filtered array item
-  //   let name = item.name.toUpperCase();
-
-  //   // Constructs HTML to display for each filtered array item
-  //   resultHtml =
-  //     resultHtml +
-  //     `<div class="list-results-container">
-  //       <div class="result-item-container">
-  //       <div class="result-item name">
-  //           <p class="mid-text link-text" onclick="saveQuery()" id="${name}">${name}</p>
-  //           <p class="caption-text">by ${item.brand}</p>
-  //       </div>
-  //       <div class="result-item tags">
-  //         <p class="tag-box">${item.longevity}</p>
-  //         <p class="tag-box scent">${item.firstScent}</p>
-  //         <p class="tag-box scent">${item.secondScent}</p>
-  //       </div>
-  //       </div>
-  //   </div>`;
-  // });
 
   list.forEach(function (item) {
     // Sets variables for each data type for each filtered array item

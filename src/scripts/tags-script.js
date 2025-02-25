@@ -1,15 +1,10 @@
-function openName() {
-  // Sends user to Name page
-  window.location.href = "name.html";
-}
+// Function to allow click thru to Name entry page:
 
-function saveQuery() {
-  // Collects the ID of the 🔍 button clicked
-  let query = event.srcElement.id;
+function saveQuery(id) {
   // Records ID in local storage
-  window.localStorage.setItem("savedQuery", query);
+  window.localStorage.setItem("savedQuery", id);
   // Triggers switch page function
-  openName();
+  window.location.href = "entry.html";
 }
 
 function displaySearchResults(list, query) {
@@ -27,10 +22,10 @@ function displaySearchResults(list, query) {
       // Injects HTML for entries with no scent values
       resultHtml =
         resultHtml +
-        `<div class="list-results-container">
+        `<div class="list-results-container" onclick="saveQuery(this.id)" id="${name}">
         <div class="result-item-container">
         <div class="result-item name">
-            <p class="mid-text link-text" onclick="saveQuery()" id="${name}">${name}</p>
+            <p class="mid-text link-text">${name}</p>
             <p class="caption-text">by ${brand}</p>
         </div>
           <div class="result-item tags">
@@ -42,10 +37,10 @@ function displaySearchResults(list, query) {
       // Injects HTML for entries with no impression
       resultHtml =
         resultHtml +
-        `<div class="list-results-container">
+        `<div class="list-results-container" onclick="saveQuery(this.id)" id="${name}">
         <div class="result-item-container">
         <div class="result-item name">
-            <p class="mid-text link-text" onclick="saveQuery()" id="${name}">${name}</p>
+            <p class="mid-text link-text">${name}</p>
             <p class="caption-text">by ${brand}</p>
         </div>
         <div class="result-item tags">
@@ -59,10 +54,10 @@ function displaySearchResults(list, query) {
       // Injects HTML for complete entries
       resultHtml =
         resultHtml +
-        `<div class="list-results-container">
+        `<div class="list-results-container" onclick="saveQuery(this.id)" id="${name}">
         <div class="result-item-container">
         <div class="result-item name">
-            <p class="mid-text link-text" onclick="saveQuery()" id="${name}">${name}</p>
+            <p class="mid-text link-text">${name}</p>
             <p class="caption-text">by ${brand}</p>
         </div>
         <div class="result-item tags">
