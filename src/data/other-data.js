@@ -1,3 +1,5 @@
+// Make sure to replace empty values (e.g. null) with null
+
 let scents = [
   {
     accord: "Aldehyde",
@@ -100,52 +102,52 @@ let brands = [
   {
     brand: "Penhaligon's",
     type: "Fragrance House",
-    link: "Penhaligon's",
+    link: "https://www.penhaligons.com/uk/en/",
   },
   {
     brand: "Angela Flanders",
     type: "Fragrance House",
-    link: "Angela Flanders",
+    link: "https://angelaflanders-perfumer.com/",
   },
   {
     brand: "Etat Libre d'Orange",
     type: "Fragrance House",
-    link: "Etat Libre d'Orange",
+    link: "https://www.etatlibredorange.com/",
   },
   {
     brand: "Commodity Fragrances",
     type: "Niche Fragrance House",
-    link: "Commodity Fragrances",
+    link: "https://commodityfragrances.co.uk/",
   },
   {
     brand: "Chanel",
     type: "Fashion House",
-    link: "Chanel | Fragrance",
+    link: "https://www.chanel.com/gb/fragrance/",
   },
   {
     brand: "Dior",
     type: "Fashion House",
-    link: "Dior | Fragrance and Beauty",
+    link: "https://www.dior.com/en_gb/beauty",
   },
   {
     brand: "Jean Paul Gaultier",
     type: "Fashion House",
-    link: "Jean Paul Gaultier | Fragrances",
+    link: "https://www.jeanpaulgaultier.com/us/en/fragrances",
   },
   {
     brand: "Prada",
     type: "Fashion House",
-    link: "Prada | Fragrances",
+    link: "https://www.prada.com/gb/en/beauty-and-fragrances/fragrances/womens-fragrances/c/10573EU",
   },
   {
     brand: "Yves Saint Laurent",
     type: "Fashion House",
-    link: "Yves Saint Laurent | Fragrance",
+    link: "https://www.yslbeauty.co.uk/fragrance",
   },
   {
     brand: "The Essence Vault",
     type: "Designer Copies",
-    link: "The Essence Vault",
+    link: "https://www.theessencevault.co.uk/",
   },
   {
     brand: "Lush",
@@ -155,12 +157,12 @@ let brands = [
   {
     brand: "Next",
     type: "Assorted Brand",
-    link: "Next | Fragrance",
+    link: "https://www.next.co.uk/shop/department-beauty-category-fragrances-0",
   },
   {
     brand: "The Body Shop",
     type: "Assorted Brand",
-    link: "The Body Shop | Fragrance",
+    link: "https://www.thebodyshop.com/en-gb/fragrance/h/h00005",
   },
   {
     brand: "DKNY",
@@ -221,5 +223,20 @@ let brands = [
     brand: "Own Fragrance",
     type: "Homemade fragrances",
     link: null,
+  },
+  {
+    brand: "Kylie Jenner",
+    type: "Celebrity",
+    link: null,
+  },
+  {
+    brand: "Discothèque Fragrances",
+    type: "Niche Fragrance House",
+    link: "https://discothequefragrances.com/",
+  },
+  {
+    brand: "d'Annam",
+    type: "Niche Fragrance House",
+    link: "https://uk.dannam.co/",
   },
 ];
