@@ -80,13 +80,12 @@
 } */
 
 .counter {
+  margin: 1.5em 0;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   color: rgba(233, 237, 234, 0.8);
   font-weight: 400;
   text-align: center;
-
   font-size: 1.2em;
-  line-height: 4em;
 }
 
 .further-info-container {

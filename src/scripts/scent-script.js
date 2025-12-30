@@ -79,6 +79,7 @@ function displayScentResults(list, query) {
   resultElement.innerHTML = resultHtml;
   // Updates counter element with filtered list length
   let counterElement = document.querySelector("#counter");
+  counterElement.classList.add("counter");
   counterElement.innerHTML = `${list.length} result(s) found for ${query}:`;
 }
 
