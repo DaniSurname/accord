@@ -182,25 +182,37 @@ function sendEmail(index) {
   let name = perfumes[index].name;
   let brand = perfumes[index].brand;
   let entry = `${name} by ${brand}`;
-  let impression = prompt("Record Impression");
+  let impression = prompt("Record an impression:");
+  let profile = prompt(
+    `Scent profile?
 
-  console.log(`
+(e.g. Aldehyde, Amber, Aquatic, Chypre, Citrus, Floral, Fresh, Fruity, Gourmand, Green, Smoky, Spicy, Woody, Animalic, Synthetic)`
+  );
+
+  if (impression != null && impression != "") {
+    console.log(`
     Index: ${index}
     Perfume: ${entry}
-    Impression: ${impression}`);
+    Impression: ${impression}
+    Profile: ${profile}`);
 
-  var templateParams = {
-    from_name: "Accord",
-    title: entry,
-    message: impression,
-  };
+    var templateParams = {
+      from_name: "Accord",
+      title: entry,
+      message: `${impression}
+      
+      Scent profile: ${profile}`,
+    };
 
-  emailjs.send("default_service", "template_2fxijz7", templateParams).then(
-    function (response) {
-      console.log("SUCCESS!", response.status, response.text);
-    },
-    function (error) {
-      console.log("FAILED...", error);
-    }
-  );
+    emailjs.send("default_service", "template_2fxijz7", templateParams).then(
+      function (response) {
+        console.log("SUCCESS!", response.status, response.text);
+        alert("Recorded 📝");
+      },
+      function (error) {
+        console.log("FAILED...", error);
+        alert("Error 💔");
+      }
+    );
+  }
 }
