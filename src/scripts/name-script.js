@@ -111,7 +111,11 @@ function updatePerfumeInfo(index) {
     <div class="name-result-sub-container">
       <button class="event-button">
       <a href="https://google.com/search?q=${name} by ${brand}">
-      Search on Google
+      Google Search
+      </a>
+      </button>
+      <button class="event-button" onclick="sendEmail(${index})">
+      Record Impression
       </a>
       </button>
     </div>
@@ -166,4 +170,37 @@ if (savedQuery !== "") {
   getFinder(savedQuery);
 } else {
   updatePerfumeInfo(Math.floor(Math.random() * 52));
+}
+
+(function () {
+  emailjs.init("KMhJ228Q-iHOpFHX-");
+})();
+
+function sendEmail(index) {
+  // Recieves index number and sends email to AccordImpressions.gmail
+
+  let name = perfumes[index].name;
+  let brand = perfumes[index].brand;
+  let entry = `${name} by ${brand}`;
+  let impression = prompt("Record Impression");
+
+  console.log(`
+    Index: ${index}
+    Perfume: ${entry}
+    Impression: ${impression}`);
+
+  var templateParams = {
+    from_name: "Accord",
+    title: entry,
+    message: impression,
+  };
+
+  emailjs.send("default_service", "template_2fxijz7", templateParams).then(
+    function (response) {
+      console.log("SUCCESS!", response.status, response.text);
+    },
+    function (error) {
+      console.log("FAILED...", error);
+    }
+  );
 }
