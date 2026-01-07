@@ -1495,11 +1495,11 @@ let perfumes = [
     firstScent: "Floral",
     secondScent: "Aquatic",
     impression:
-      "Warm, fresh rose. Not a light floral per se, but spacious and watery. A green hint, like cut flowers - which could be the juniper berry. The rose develops to be stronger later, with a powdery dry down. Opens up to hint at a red wine note, with a romantic scent overall. Good for Spring or Summer, while wearing a flowy dress.",
+      "Fresh yet warm rose. Not a light floral per se, but spacious and watery. A hint of green, like cut flowers - which could be the juniper berry. The rose strengthens throughout, with a powdery dry down. Opens up later to hint at a red wine note, with a romantic scent overall. Good for Spring or Summer, while wearing a flowy dress.",
     additional: null,
     tags: "floral aquatic",
     complete:
-      "da lat d'annam floral aquatic warm fresh rose. not a light floral per se but spacious and watery. a green hint like cut flowers - which could be the juniper berry. the rose develops to be stronger later with a powdery dry down. opens up to hint at a red wine note with a romantic scent overall. good for spring or summer while wearing a flowy dress.",
+      "da lat d'annam floral aquatic fresh yet warm rose. not a light floral per se but spacious and watery. a hint of green like cut flowers - which could be the juniper berry. the rose strengthens throughout with a powdery dry down. opens up later to hint at a red wine note with a romantic scent overall. good for spring or summer while wearing a flowy dress.",
     finder: "DALAT",
   },
   {
