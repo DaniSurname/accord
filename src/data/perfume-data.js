@@ -1,4 +1,4 @@
-// Make sure to replace empty values (e.g. "") with null
+// Make sure to replace empty values (e.g. null) with null
 
 let perfumes = [
   {
@@ -471,11 +471,11 @@ let perfumes = [
     firstScent: "Floral",
     secondScent: "Fruity",
     impression:
-      "Fruit warmed floral, fruits range from citruses to jammy, musk base.",
+      "Rich and warm. Fruit warmed floral, fruits range from citruses to jammy, musk base.",
     additional: "jasmine ylang ylang orange blossom tuberose",
     tags: "floral fruity jasmine ylang ylang orange blossom tuberose",
     complete:
-      "gabrielle essence chanel floral fruity fruit warmed floral fruits range from citruses to jammy musk base. jasmine ylang ylang orange blossom tuberose",
+      "gabrielle essence chanel floral fruity rich and warm. fruit warmed floral fruits range from citruses to jammy musk base. jasmine ylang ylang orange blossom tuberose",
     finder: "GABRIELLEESSENCE",
   },
   {
@@ -504,7 +504,7 @@ let perfumes = [
     firstScent: null,
     secondScent: null,
     impression: null,
-    additional: "vanilla lavender",
+    additional: "vanilla lavender ",
     tags: "none",
     complete: "goddess burberry vanilla lavender",
     finder: "GODDESS",
@@ -561,11 +561,12 @@ let perfumes = [
     longevity: "4 to 5 hours",
     firstScent: "Woody",
     secondScent: "Spicy",
-    impression: null,
+    impression:
+      "My signature scent. Incredible reach. Tuberose, expensive floral.",
     additional: "signature oud rose bergamot jasmine grapefruit",
     tags: "woody spicy signature oud rose bergamot jasmine grapefruit",
     complete:
-      "halfeti penhaligon's woody spicy signature oud rose bergamot jasmine grapefruit",
+      "halfeti penhaligon's woody spicy my signature scent. incredible reach. tuberose expensive floral. signature oud rose bergamot jasmine grapefruit",
     finder: "HALFETI",
   },
   {
@@ -592,7 +593,7 @@ let perfumes = [
     firstScent: null,
     secondScent: null,
     impression: null,
-    additional: "bergamot leather oud incense plum",
+    additional: "bergamot leather oud incense plum ",
     tags: "none",
     complete: "halfeti leather penhaligon's bergamot leather oud incense plum",
     finder: "HALFETILEATHER",
@@ -627,7 +628,7 @@ let perfumes = [
     finder: "IWANTCHOO",
   },
   {
-    name: "Ianthe Oud",
+    name: "Ianthe Oud ",
     brand: "Liberty",
     type: "Eau de Parfum",
     size: "8ml",
@@ -648,15 +649,15 @@ let perfumes = [
     type: "Eau de Parfum",
     size: "Sample",
     longevity: "4 to 5 hours",
-    firstScent: null,
-    secondScent: null,
+    firstScent: "Woody",
+    secondScent: "Floral",
     impression:
-      "The product copy that started it all: the regal prima ballerina.",
+      "The product copy that started it all: the regal prima ballerina. The first perfume storytelling I ever fell in love with - the iris flower a ballerina dancing on polished wooden floorboards.",
     additional:
       "Discontinued iris bergamot leather amber pink pepper jasmine sambac hedione vanilla sandalwood vetiver benzoin",
-    tags: "none",
+    tags: "woody floral discontinued iris bergamot leather amber pink pepper jasmine sambac hedione vanilla sandalwood vetiver benzoin",
     complete:
-      "iris prima penhaligon's the product copy that started it all: the regal prima ballerina. discontinued iris bergamot leather amber pink pepper jasmine sambac hedione vanilla sandalwood vetiver benzoin",
+      "iris prima penhaligon's woody floral the product copy that started it all: the regal prima ballerina. the first perfume storytelling i ever fell in love with - the iris flower a ballerina dancing on polished wooden floorboards. discontinued iris bergamot leather amber pink pepper jasmine sambac hedione vanilla sandalwood vetiver benzoin",
     finder: "IRISPRIMA",
   },
   {
@@ -683,7 +684,7 @@ let perfumes = [
     secondScent: "Fresh",
     impression: null,
     additional:
-      "black pepper bergamot galbanum patchouli tuberose jasmine lemon balm",
+      "black pepper bergamot galbanum patchouli tuberose jasmine lemon balm ",
     tags: "green fresh black pepper bergamot galbanum patchouli tuberose jasmine lemon balm",
     complete:
       "lawn angela flanders green fresh black pepper bergamot galbanum patchouli tuberose jasmine lemon balm",
@@ -804,8 +805,8 @@ let perfumes = [
     firstScent: "Floral",
     secondScent: "Fresh",
     impression:
-      "Clean, with the fattiness of orange rinds. Opens with an aldehyde tickly, giving a citrus (mostly orange) and floral soap smell overall.",
-    additional: "Jasmine Fir Balsam Bergamot rose",
+      "Clean, with the fattiness of orange rinds. Opens with an aldehyde tickly, giving a citrus (mostly orange) and floral soap smell overall. ",
+    additional: "Jasmine Fir Balsam Bergamot rose ",
     tags: "floral fresh jasmine fir balsam bergamot rose",
     complete:
       "luna penhaligon's floral fresh clean with the fattiness of orange rinds. opens with an aldehyde tickly giving a citrus (mostly orange) and floral soap smell overall. jasmine fir balsam bergamot rose",
@@ -1277,10 +1278,12 @@ let perfumes = [
     longevity: "4 to 5 hours",
     firstScent: null,
     secondScent: null,
-    impression: null,
+    impression:
+      "Soft and sweet, slight skin scent. Little bit like Mugler’s Alien, could be the pear.\n",
     additional: null,
     tags: "none",
-    complete: "cosmic kylie jenner",
+    complete:
+      "cosmic kylie jenner soft and sweet slight skin scent. little bit like mugler’s alien could be the pear.",
     finder: "COSMIC",
   },
   {
@@ -1373,12 +1376,14 @@ let perfumes = [
     type: "Eau de Parfum",
     size: "Sample",
     longevity: "4 to 5 hours",
-    firstScent: null,
-    secondScent: null,
-    impression: null,
+    firstScent: "Amber",
+    secondScent: "Floral",
+    impression:
+      "Soft, sweet. Starts very powdery. Reminiscent of the perfume Ghost, with more base. Slight incense on the dry down. ",
     additional: null,
-    tags: "none",
-    complete: "dark imagination discothèque fragrances",
+    tags: "amber floral",
+    complete:
+      "dark imagination discothèque fragrances amber floral soft sweet. starts very powdery. reminiscent of the perfume ghost with more base. slight incense on the dry down.",
     finder: "DARKIMAGINATION",
   },
   {
@@ -1387,12 +1392,14 @@ let perfumes = [
     type: "Eau de Parfum",
     size: "Sample",
     longevity: "4 to 5 hours",
-    firstScent: null,
-    secondScent: null,
-    impression: null,
+    firstScent: "Aquatic",
+    secondScent: "Animalic",
+    impression:
+      "Masculine. Salty, clean sweat. Fresh sea air. Slight blue note, but layered enough to be more complex.",
     additional: null,
-    tags: "none",
-    complete: "sweat tears paradise discothèque fragrances",
+    tags: "aquatic animalic",
+    complete:
+      "sweat tears paradise discothèque fragrances aquatic animalic masculine. salty clean sweat. fresh sea air. slight blue note but layered enough to be more complex.",
     finder: "SWEAT,TEARS,PARADISE",
   },
   {
@@ -1485,12 +1492,14 @@ let perfumes = [
     type: "Eau de Parfum",
     size: "Sample",
     longevity: "4 to 5 hours",
-    firstScent: null,
-    secondScent: null,
-    impression: null,
+    firstScent: "Floral",
+    secondScent: "Aquatic",
+    impression:
+      "Warm, fresh rose. Not a light floral per se, but spacious and watery. A green hint, like cut flowers - which could be the juniper berry. The rose develops to be stronger later, with a powdery dry down. Opens up to hint at a red wine note, with a romantic scent overall. Good for Spring or Summer, while wearing a flowy dress.",
     additional: null,
-    tags: "none",
-    complete: "da lat d'annam",
+    tags: "floral aquatic",
+    complete:
+      "da lat d'annam floral aquatic warm fresh rose. not a light floral per se but spacious and watery. a green hint like cut flowers - which could be the juniper berry. the rose develops to be stronger later with a powdery dry down. opens up to hint at a red wine note with a romantic scent overall. good for spring or summer while wearing a flowy dress.",
     finder: "DALAT",
   },
   {

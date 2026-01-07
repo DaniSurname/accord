@@ -100,77 +100,7 @@ let scents = [
 
 let brands = [
   {
-    brand: "Penhaligon's",
-    type: "Fragrance House",
-    link: "https://www.penhaligons.com/uk/en/",
-  },
-  {
-    brand: "Angela Flanders",
-    type: "Fragrance House",
-    link: "https://angelaflanders-perfumer.com/",
-  },
-  {
-    brand: "Etat Libre d'Orange",
-    type: "Fragrance House",
-    link: "https://www.etatlibredorange.com/",
-  },
-  {
-    brand: "Commodity Fragrances",
-    type: "Niche Fragrance House",
-    link: "https://commodityfragrances.co.uk/",
-  },
-  {
-    brand: "Chanel",
-    type: "Fashion House",
-    link: "https://www.chanel.com/gb/fragrance/",
-  },
-  {
-    brand: "Dior",
-    type: "Fashion House",
-    link: "https://www.dior.com/en_gb/beauty",
-  },
-  {
-    brand: "Jean Paul Gaultier",
-    type: "Fashion House",
-    link: "https://www.jeanpaulgaultier.com/us/en/fragrances",
-  },
-  {
-    brand: "Prada",
-    type: "Fashion House",
-    link: "https://www.prada.com/gb/en/beauty-and-fragrances/fragrances/womens-fragrances/c/10573EU",
-  },
-  {
-    brand: "Yves Saint Laurent",
-    type: "Fashion House",
-    link: "https://www.yslbeauty.co.uk/fragrance",
-  },
-  {
-    brand: "The Essence Vault",
-    type: "Designer Copies",
-    link: "https://www.theessencevault.co.uk/",
-  },
-  {
-    brand: "Lush",
-    type: "Assorted Brand",
-    link: null,
-  },
-  {
-    brand: "Next",
-    type: "Assorted Brand",
-    link: "https://www.next.co.uk/shop/department-beauty-category-fragrances-0",
-  },
-  {
-    brand: "The Body Shop",
-    type: "Assorted Brand",
-    link: "https://www.thebodyshop.com/en-gb/fragrance/h/h00005",
-  },
-  {
-    brand: "DKNY",
-    type: "Fashion House",
-    link: null,
-  },
-  {
-    brand: "Jennifer Lopez",
+    brand: "Ariana Grande",
     type: "Celebrity",
     link: null,
   },
@@ -180,19 +110,9 @@ let brands = [
     link: null,
   },
   {
-    brand: "Jimmy Choo",
+    brand: "Chanel",
     type: "Fashion House",
-    link: null,
-  },
-  {
-    brand: "Mugler",
-    type: "Fashion House",
-    link: null,
-  },
-  {
-    brand: "Ariana Grande",
-    type: "Celebrity",
-    link: null,
+    link: "https://www.chanel.com/gb/fragrance/",
   },
   {
     brand: "Christina Aguilera",
@@ -200,13 +120,53 @@ let brands = [
     link: null,
   },
   {
-    brand: "Tom Ford",
+    brand: "Commodity Fragrances",
+    type: "Niche Fragrance House",
+    link: "https://commodityfragrances.co.uk/",
+  },
+  {
+    brand: "d'Annam",
+    type: "Niche Fragrance House",
+    link: "https://uk.dannam.co/",
+  },
+  {
+    brand: "Dior",
+    type: "Fashion House",
+    link: "https://www.dior.com/en_gb/beauty",
+  },
+  {
+    brand: "Discothèque Fragrances",
+    type: "Niche Fragrance House",
+    link: "https://discothequefragrances.com/",
+  },
+  {
+    brand: "DKNY",
     type: "Fashion House",
     link: null,
   },
   {
-    brand: "Xerjoff",
-    type: "Niche Fragrance House",
+    brand: "Etat Libre d'Orange",
+    type: "Fragrance House",
+    link: "https://www.etatlibredorange.com/",
+  },
+  {
+    brand: "Jean Paul Gaultier",
+    type: "Fashion House",
+    link: "https://www.jeanpaulgaultier.com/us/en/fragrances",
+  },
+  {
+    brand: "Jennifer Lopez",
+    type: "Celebrity",
+    link: null,
+  },
+  {
+    brand: "Jimmy Choo",
+    type: "Fashion House",
+    link: null,
+  },
+  {
+    brand: "Kylie Jenner",
+    type: "Celebrity ",
     link: null,
   },
   {
@@ -220,23 +180,58 @@ let brands = [
     link: null,
   },
   {
+    brand: "Lush",
+    type: "Assorted Brand",
+    link: null,
+  },
+  {
+    brand: "Mugler",
+    type: "Fashion House",
+    link: null,
+  },
+  {
+    brand: "Next",
+    type: "Assorted Brand",
+    link: "https://www.next.co.uk/shop/department-beauty-category-fragrances-0",
+  },
+  {
     brand: "Own Fragrance",
     type: "Homemade fragrances",
     link: null,
   },
   {
-    brand: "Kylie Jenner",
-    type: "Celebrity",
+    brand: "Penhaligon's",
+    type: "Fragrance House",
+    link: "https://www.penhaligons.com/uk/en/",
+  },
+  {
+    brand: "Prada",
+    type: "Fashion House",
+    link: "https://www.prada.com/gb/en/beauty-and-fragrances/fragrances/womens-fragrances/c/10573EU",
+  },
+  {
+    brand: "The Body Shop",
+    type: "Assorted Brand",
+    link: "https://www.thebodyshop.com/en-gb/fragrance/h/h00005",
+  },
+  {
+    brand: "The Essence Vault",
+    type: "Designer Copies",
+    link: "https://www.theessencevault.co.uk/",
+  },
+  {
+    brand: "Tom Ford",
+    type: "Fashion House",
     link: null,
   },
   {
-    brand: "Discothèque Fragrances",
+    brand: "Xerjoff",
     type: "Niche Fragrance House",
-    link: "https://discothequefragrances.com/",
+    link: null,
   },
   {
-    brand: "d'Annam",
-    type: "Niche Fragrance House",
-    link: "https://uk.dannam.co/",
+    brand: "Yves Saint Laurent",
+    type: "Fashion House",
+    link: "https://www.yslbeauty.co.uk/fragrance",
   },
 ];
