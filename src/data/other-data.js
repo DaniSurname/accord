@@ -166,7 +166,7 @@ let brands = [
   },
   {
     brand: "Kylie Jenner",
-    type: "Celebrity ",
+    type: "Celebrity",
     link: null,
   },
   {
@@ -233,5 +233,15 @@ let brands = [
     brand: "Yves Saint Laurent",
     type: "Fashion House",
     link: "https://www.yslbeauty.co.uk/fragrance",
+  },
+  {
+    brand: "Le Labo",
+    type: "Niche Fragrance House",
+    link: "https://www.lelabofragrances.com/",
+  },
+  {
+    brand: "Montale",
+    type: "Niche Fragrance House",
+    link: "http://montaleparfums.com/en/",
   },
 ];
