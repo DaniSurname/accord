@@ -77,6 +77,7 @@ function displaySearchResults(list, query) {
   resultElement.innerHTML = resultHtml;
   // Updates counter element with filtered list length
   let counterElement = document.querySelector("#counter");
+  counterElement.classList.add("counter");
   counterElement.innerHTML = `${list.length} result(s) found for ${query}:`;
 }
 
@@ -85,7 +86,7 @@ function filterQuery(query) {
 
   // Filters 'perfumes' array by query
   let list = perfumes.filter((element) =>
-    element.complete.includes(updatedQuery)
+    element.complete.includes(updatedQuery),
   );
 
   // Sends results to display function
