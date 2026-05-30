@@ -7,7 +7,9 @@ function saveQuery(id) {
   window.location.href = "entry.html";
 }
 
-function displaySearchResults(list, query) {
+// Functions to display filtered results:
+
+function displayScentResults(list, query) {
   // Sets variable to collect HTML code in
   let resultHtml = "";
 
@@ -25,7 +27,7 @@ function displaySearchResults(list, query) {
         `<div class="list-results-container" onclick="saveQuery(this.id)" id="${name}">
         <div class="result-item-container">
         <div class="result-item name">
-            <p class="card-title link-text">${name}</p>
+            <p class="card-title">${name}</p>
             <p class="caption-text">by ${brand}</p>
         </div>
           <div class="result-item tags">
@@ -40,7 +42,7 @@ function displaySearchResults(list, query) {
         `<div class="list-results-container" onclick="saveQuery(this.id)" id="${name}">
         <div class="result-item-container">
         <div class="result-item name">
-            <p class="card-title link-text">${name}</p>
+            <p class="card-title">${name}</p>
             <p class="caption-text">by ${brand}</p>
         </div>
         <div class="result-item tags">
@@ -57,7 +59,7 @@ function displaySearchResults(list, query) {
         `<div class="list-results-container" onclick="saveQuery(this.id)" id="${name}">
         <div class="result-item-container">
         <div class="result-item name">
-            <p class="card-title link-text">${name}</p>
+            <p class="card-title">${name}</p>
             <p class="caption-text">by ${brand}</p>
         </div>
         <div class="result-item tags">
@@ -66,7 +68,7 @@ function displaySearchResults(list, query) {
           <p class="tag-box scent">${item.secondScent}</p>
         </div>
         </div>
-        <hr >
+        <br >
         <div class="caption-text"><em>${impression}</em></div>
     </div>`;
     }
@@ -81,27 +83,137 @@ function displaySearchResults(list, query) {
   counterElement.innerHTML = `${list.length} result(s) found for ${query}:`;
 }
 
-function filterQuery(query) {
+// function displayScentInfo(scents, query) {
+//   let index = scents.findIndex((item) => item.accord.includes(query));
+//   let about = scents[index].about;
+//   let composition = scents[index].composition;
+
+//   let infoElement = document.querySelector("#scent-info");
+//   infoElement.innerHTML = `
+//   <div class="further-info-title">${about.toUpperCase()}</div>
+//   <div class="further-info-about">${composition}</div>
+//   `;
+// }
+
+// Functions to filter perfume data by query:
+
+function filterPerfumes(perfumes, query) {
   let updatedQuery = query.toLowerCase();
 
-  // Filters 'perfumes' array by query
+  // Filters 'perfumes' array by scent query
   let list = perfumes.filter((element) =>
     element.complete.includes(updatedQuery),
   );
-
   // Sends results to display function
-  displaySearchResults(list, query);
+  displayScentResults(list, query);
+  // displayScentInfo(scents, query);
 }
 
-function getSearchInput() {
-  event.preventDefault();
+function getScent() {
+  // Records chosen scent or brand as 'query'
+  let query = event.srcElement.id;
+  // Sends query to filter function
+  filterPerfumes(perfumes, query);
 
-  let searchInput = document.querySelector("#search-input");
-  let query = searchInput.value;
-
-  console.log(query);
-  filterQuery(query);
+  console.log(`Filtering database for: ${query}`);
 }
 
-let searchBar = document.querySelector("#search-bar");
-searchBar.addEventListener("submit", getSearchInput);
+function getTag() {
+  // Records chosen tag as 'query'
+  let query = event.srcElement.id;
+  // Sends query to filter function
+  filterPerfumes(perfumes, query);
+
+  console.log(`Filtering database for: ${query}`);
+}
+
+function checkDropdown() {
+  // Toggles button dropdowns
+  // function to check if the menu is already open
+  // if yes = close,  if no = proceed to toggleDropdown()
+
+  let query = event.srcElement.id;
+  let dropdownButton = document.querySelector(`#${query}`);
+  let dropdownContent = document.querySelector(`#${query}-buttons`);
+
+  if (dropdownButton.classList.contains("menu-open")) {
+    dropdownButton.classList.remove("menu-open");
+    dropdownContent.classList.remove("menu-open");
+  } else {
+    toggleDropdown();
+  }
+}
+
+function toggleDropdown() {
+  let query = event.srcElement.id;
+  console.log(`Opening: ${query}`);
+
+  let dropdownOptions = document.querySelectorAll(
+    ".dropdown-button,.dropdown-content",
+  );
+
+  dropdownOptions.forEach(function (item) {
+    if (item.classList.contains("menu-open")) {
+      item.classList.toggle("menu-open");
+    }
+  });
+
+  let dropdownButton = document.querySelector(`#${query}`);
+  dropdownButton.classList.toggle("menu-open");
+
+  let dropdownContent = document.querySelector(`#${query}-buttons`);
+  dropdownContent.classList.toggle("menu-open");
+}
+
+// Functions to inject page structure:
+
+function injectButtons(scents, brands, tags) {
+  // Generates buttons for filtering by scent profile
+
+  // Scent buttons
+
+  let scentButtonsHTML = "";
+
+  scents.forEach(function (item) {
+    let name = item.accord;
+
+    scentButtonsHTML =
+      scentButtonsHTML +
+      `<button class="dropdown-option" id="${name}" onclick="getScent()">${item.emoji} ${name}</button>`;
+  });
+
+  // Brand buttons
+
+  let brandsButtonsHTML = "";
+
+  let scentButtons = document.querySelector("#scent-dropdown-buttons");
+  scentButtons.innerHTML = scentButtonsHTML;
+
+  brands.forEach(function (item) {
+    let name = item.brand;
+
+    brandsButtonsHTML =
+      brandsButtonsHTML +
+      `<button class="dropdown-option" id="${name}" onclick="getScent()">${name}</button>`;
+  });
+
+  let brandButtons = document.querySelector("#brand-dropdown-buttons");
+  brandButtons.innerHTML = brandsButtonsHTML;
+
+  // Tag buttons
+
+  let tagsButtonsHTML = "";
+
+  tags.forEach(function (item) {
+    let name = item.name;
+
+    tagsButtonsHTML =
+      tagsButtonsHTML +
+      `<button class="dropdown-option" id="${item.finder}" onclick="getTag()">${item.emoji} ${name}</button>`;
+  });
+
+  let tagButtons = document.querySelector("#tag-dropdown-buttons");
+  tagButtons.innerHTML = tagsButtonsHTML;
+}
+
+injectButtons(scents, brands, tags);
