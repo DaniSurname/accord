@@ -61,6 +61,7 @@ function updateScentInfo(index) {
   let firstScent = perfumes[index].firstScent;
   let secondScent = perfumes[index].secondScent;
   let impression = perfumes[index].impression;
+  let additional = perfumes[index].additional;
 
   // Hide elements if Scent Profile or Impression returns null
   if (firstScent != null) {
@@ -91,10 +92,45 @@ function updatePerfumeInfo(index) {
   let type = perfumes[index].type;
   let longevity = perfumes[index].longevity;
   let size = perfumes[index].size;
+  let additional = perfumes[index].additional;
 
   // Updates page with query result
   let resultElement = document.querySelector("#perfume-info");
-  resultElement.innerHTML = `
+
+  if (additional != null) {
+    let additionalBroken = additional.replace(/\./g, ".<br >");
+    console.log(additionalBroken);
+    resultElement.innerHTML = `
+    <div class="name-result-sub-container">
+      <div class="title-text">${name.toUpperCase()}</div>
+      <div class="mid-text">by ${brand}</div>
+    </div>
+    <hr />
+    <div class="name-result-sub-container">
+      <div class="mid-text">${type.toUpperCase()}</div>
+      <div class="caption-text">${size} size in collection.</div>
+    </div>
+    <div class="name-result-sub-container">
+      <div class="caption-text">${additionalBroken}</div>
+    </div>
+    <div class="name-result-sub-container"> 
+      <div class="caption-text"><em>Expected longevity: <br / >${longevity}</em></div>
+      </div>
+    </div>
+    <div class="name-result-sub-container">
+      <button class="event-button">
+      <a href="https://google.com/search?q=${name} by ${brand}">
+      Google Search
+      </a>
+      </button>
+      <button class="event-button" onclick="sendEmail(${index})">
+      Record Impression
+      </a>
+      </button>
+    </div>
+`;
+  } else {
+    resultElement.innerHTML = `
     <div class="name-result-sub-container">
       <div class="title-text">${name.toUpperCase()}</div>
       <div class="mid-text">by ${brand}</div>
@@ -120,6 +156,7 @@ function updatePerfumeInfo(index) {
       </button>
     </div>
 `;
+  }
 
   updateScentInfo(index);
   updateEntryInfo(index);
@@ -186,7 +223,7 @@ function sendEmail(index) {
   let profile = prompt(
     `Scent profile?
 
-(e.g. Aldehyde, Amber, Aquatic, Chypre, Citrus, Floral, Fresh, Fruity, Gourmand, Green, Smoky, Spicy, Woody, Animalic, Synthetic)`
+(e.g. Aldehyde, Amber, Aquatic, Chypre, Citrus, Floral, Fresh, Fruity, Gourmand, Green, Smoky, Spicy, Woody, Animalic, Synthetic)`,
   );
 
   if (impression != null && impression != "") {
@@ -212,7 +249,7 @@ function sendEmail(index) {
       function (error) {
         console.log("FAILED...", error);
         alert("Error 💔");
-      }
+      },
     );
   }
 }
