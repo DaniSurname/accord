@@ -245,3 +245,24 @@ let brands = [
     link: "http://montaleparfums.com/en/",
   },
 ];
+
+let tags = [
+  {
+    name: "Favourites",
+    type: "Standard",
+    finder: "favourite",
+    emoji: "❤️",
+  },
+  {
+    name: "Wishlist",
+    type: "Standard",
+    finder: "wishlist",
+    emoji: "📝",
+  },
+  {
+    name: "To Retry",
+    type: "Standard",
+    finder: "retry",
+    emoji: "🔄",
+  },
+];

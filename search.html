@@ -27,6 +27,14 @@
           <span class="hide-mobile">Search by </span>
           <span class="dropdown-title">Brand</span>
         </button>
+        <button
+          class="dropdown-button"
+          id="tag-dropdown"
+          onclick="checkDropdown()"
+        >
+          <span class="hide-mobile">Search by </span>
+          <span class="dropdown-title">Tag</span>
+        </button>
         <!-- <button
           class="dropdown-button"
           id="tags-dropdown"
@@ -39,6 +47,7 @@
 
       <div class="dropdown-content" id="scent-dropdown-buttons"></div>
       <div class="dropdown-content" id="brand-dropdown-buttons"></div>
+      <div class="dropdown-content" id="tag-dropdown-buttons"></div>
       <!-- <div class="dropdown-content" id="tags-dropdown-buttons">
         <form id="search-bar">
           <input

@@ -102,7 +102,7 @@ function filterPerfumes(perfumes, query) {
 
   // Filters 'perfumes' array by scent query
   let list = perfumes.filter((element) =>
-    element.complete.includes(updatedQuery)
+    element.complete.includes(updatedQuery),
   );
   // Sends results to display function
   displayScentResults(list, query);
@@ -110,7 +110,7 @@ function filterPerfumes(perfumes, query) {
 }
 
 function getScent() {
-  // Records chosen scent as 'query'
+  // Records chosen scent or brand as 'query'
   let query = event.srcElement.id;
   // Sends query to filter function
   filterPerfumes(perfumes, query);
@@ -118,9 +118,17 @@ function getScent() {
   console.log(`Filtering database for: ${query}`);
 }
 
-// Toggles button dropdowns
+function getTag() {
+  // Records chosen tag as 'query'
+  let query = event.srcElement.id;
+  // Sends query to filter function
+  filterPerfumes(perfumes, query);
+
+  console.log(`Filtering database for: ${query}`);
+}
 
 function checkDropdown() {
+  // Toggles button dropdowns
   // function to check if the menu is already open
   // if yes = close,  if no = proceed to toggleDropdown()
 
@@ -138,10 +146,10 @@ function checkDropdown() {
 
 function toggleDropdown() {
   let query = event.srcElement.id;
-  console.log(query);
+  console.log(`Opening: ${query}`);
 
   let dropdownOptions = document.querySelectorAll(
-    ".dropdown-button,.dropdown-content"
+    ".dropdown-button,.dropdown-content",
   );
 
   dropdownOptions.forEach(function (item) {
@@ -159,10 +167,12 @@ function toggleDropdown() {
 
 // Functions to inject page structure:
 
-function injectButtons(scents, brands) {
+function injectButtons(scents, brands, tags) {
   // Generates buttons for filtering by scent profile
+
+  // Scent buttons
+
   let scentButtonsHTML = "";
-  let brandsButtonsHTML = "";
 
   scents.forEach(function (item) {
     let name = item.accord;
@@ -172,6 +182,13 @@ function injectButtons(scents, brands) {
       `<button class="dropdown-option" id="${name}" onclick="getScent()">${item.emoji} ${name}</button>`;
   });
 
+  // Brand buttons
+
+  let brandsButtonsHTML = "";
+
+  let scentButtons = document.querySelector("#scent-dropdown-buttons");
+  scentButtons.innerHTML = scentButtonsHTML;
+
   brands.forEach(function (item) {
     let name = item.brand;
 
@@ -180,10 +197,23 @@ function injectButtons(scents, brands) {
       `<button class="dropdown-option" id="${name}" onclick="getScent()">${name}</button>`;
   });
 
-  let scentButtons = document.querySelector("#scent-dropdown-buttons");
-  scentButtons.innerHTML = scentButtonsHTML;
   let brandButtons = document.querySelector("#brand-dropdown-buttons");
   brandButtons.innerHTML = brandsButtonsHTML;
+
+  // Tag buttons
+
+  let tagsButtonsHTML = "";
+
+  tags.forEach(function (item) {
+    let name = item.name;
+
+    tagsButtonsHTML =
+      tagsButtonsHTML +
+      `<button class="dropdown-option" id="${item.finder}" onclick="getTag()">${item.emoji} ${name}</button>`;
+  });
+
+  let tagButtons = document.querySelector("#tag-dropdown-buttons");
+  tagButtons.innerHTML = tagsButtonsHTML;
 }
 
-injectButtons(scents, brands);
+injectButtons(scents, brands, tags);
